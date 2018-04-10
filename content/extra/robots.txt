@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://citellusorg.github.io/sitemap.xml 
