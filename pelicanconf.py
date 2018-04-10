@@ -27,12 +27,14 @@ DISPLAY_PAGES_ON_MENU = True
 STATIC_PATHS = [
     'imagen',
     'extra/robots.txt',
-    'extra/favicon.ico'
+    'extra/favicon.ico',
+    'extra/CNAME'
 ]
 
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME': {'path': 'CNAME'}
 }
 
 CACHE_CONTENT = False
