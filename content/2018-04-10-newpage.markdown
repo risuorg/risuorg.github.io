@@ -1,0 +1,15 @@
+---
+layout: post
+title: Recent changes in Magui and Citellus
+date: 2018-01-16 21:17:00 +0200
+comments: true
+tags: citellus, magui
+category: blog
+description:
+---
+
+## New home!
+
+We've just created this page for hosting the project.
+
+Thanks for visiting!
