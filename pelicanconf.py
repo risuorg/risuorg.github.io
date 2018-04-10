@@ -140,8 +140,7 @@ SITEMAP = {
 
 SITE_UPDATED = datetime.date.today()
 
-GOOGLE_ANALYTICS = "UA-81705-12"
-
+GOOGLE_ANALYTICS = "UA-81705-14"
 
 # blue-penguin
 
