@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import datetime
 
 AUTHOR = u'Pablo Iranzo Gómez'
-SITENAME = u"Citellus website"
+SITENAME = u"Citellus: Validate your deployments"
 SITEURL = u'/'
 
 PATH = 'content'
@@ -104,9 +104,9 @@ DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives']
 
 # Social widget
 
-# SOCIAL = [
-#     ('github', 'https://github.com/iranzo'),
-# ]
+SOCIAL = [
+     ('github', 'https://github.com/citellusorg'),
+ ]
 
 DEFAULT_PAGINATION = 5
 

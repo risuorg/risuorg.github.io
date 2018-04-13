@@ -5,6 +5,11 @@ comments: true
 tags:
 description:
 
+### What is citellus?
+
+Is a tool based on execution of simple 'plugins' written in the language that is more convenient for you as long as it is based on some standard conventions.
+
+
 ### Who are we?
 
-We're a group of enthusiasts working in Technical suupport that have come out with this tool for detecting known issues in systems to speed up the issue resolution process.
+We're a group of enthusiasts working in Technical Support that have come out with this tool for detecting known issues in systems to speed up the issue resolution process.
