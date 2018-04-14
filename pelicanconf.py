@@ -25,7 +25,7 @@ AUTHOR_FEED_RSS = 'feeds/%s.rss'
 DISPLAY_PAGES_ON_MENU = True
 
 STATIC_PATHS = [
-    'imagen',
+    'images',
     'extra/robots.txt',
     'extra/favicon.ico',
     'extra/CNAME'

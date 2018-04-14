@@ -12,7 +12,7 @@ description:
 [![PyPI version](https://badge.fury.io/py/citellus.svg)](https://badge.fury.io/py/citellus)
 [![](https://images.microbadger.com/badges/image/citellus/citellus.svg)](https://microbadger.com/images/citellus/citellus "Get your own image badge on microbadger.com")
 
-<img src="doc/citellus.png" width="20%" border=0 align="right">
+<img src="../images/citellus.png" width="20%" border=0 align="right">
 
 # Introduction
 
@@ -52,7 +52,7 @@ Check how does it look in an execution at:
 [![asciicast](https://asciinema.org/a/169814.png)](https://asciinema.org/a/169814)
 
 ## HTML Interface
-<img src="doc/images/www.png" height="40%" border=0>
+<img src="../images/www.png" height="40%" border=0>
 
 ## Additional resources
 

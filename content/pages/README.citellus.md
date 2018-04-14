@@ -5,7 +5,7 @@ comments: true
 tags:
 description:
 
-<img src="doc/citellus.png" width="20%" border=0 align="right">
+<img src="../images/citellus.png" width="20%" border=0 align="right">
 
 # Introduction
 
@@ -201,7 +201,7 @@ INFO:citellus:using default plugin path
 ## HTML Interface
 - Create by using `--output $FOLDER` and `--web`, open the generated `citellus.html`.
 
-<img src="doc/images/www.png" height="40%" border=0>
+<img src="../images/www.png" height="40%" border=0>
 
 - Citellus-web now supports the parsing of magui.json.
 
