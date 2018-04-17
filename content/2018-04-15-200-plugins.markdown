@@ -37,4 +37,4 @@ total : 200
 
 Each plugin does enable at least one test performed against your system or sosreport that ease the issue detection task or provide proactive data before an issue affects it!
 
-Come and help us [CONTRIBUTING](https://github.com/zerodayz/citellus/blob/master/CONTRIBUTING.md) to extend that number more!
+Come and help us [CONTRIBUTING](https://github.com/citellusorg/citellus/blob/master/CONTRIBUTING.md) to extend that number more!
