@@ -13,3 +13,7 @@ Is a tool based on execution of simple 'plugins' written in the language that is
 ### Who are we?
 
 We're a group of enthusiasts working in Technical Support that have come out with this tool for detecting known issues in systems to speed up the issue resolution process.
+
+### Get it!
+
+Just head to <https://github.com/citellusorg/citellus/> and get the code!
