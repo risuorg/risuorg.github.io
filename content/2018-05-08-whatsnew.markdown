@@ -1,0 +1,83 @@
+---
+layout: post
+title: Recent changes in Magui and Citellus
+date: 2018-05-08 7:17:00 +0200
+comments: true
+tags: citellus, magui, whatsnew
+category: blog
+description:
+---
+## What's new?
+
+Our previous edition of What's new was stored externally at <https://iranzo.github.io/blog/2018/01/16/recent-changes-in-magui-and-citellus/>, so we've copied to this website for completeness (now locally at: [Whats new]({filename}2018-01-16-recent-changes-in-magui-and-citellus.markdown))
+
+What has happened since then?
+
+- We're presenting at SuperSec 2018 in Almería, Spain [SuperSec 2018]({filename}2018-04-16-supersec.md)
+- Up to 217 plugins as of today
+- Lot of code changes
+
+Some of the changes include...
+
+### General
+- New domain: <https://citellus.org> and new URL for repos <https://github.com/citellusorg/>
+- Updated presentation files
+    - SuperSec 2018
+    - General one
+- Functions:
+    - Move functions like expanding ranges to common function set
+    - is_filemode and is_required_filemode to check access permissions
+- POT generation update to allow duplicate message id's
+- Framework (citellus and magui)
+    - Python optmizations
+        - Removed duplicated code
+        - Declare variables to remove to reduce memory footprint
+        - On magui, save earlier instead of running twice (with lot of sosreports it was an issue)
+        - Limit magui checks by default to 10 sosreports at the same time or exit
+        - Use absolute paths internally when working on sosreports
+    - Autogroups
+        - Magui does now check possible groups based on metadata to compare sosreports between them in addition to 'all against all' to hilight issues that affect 'controllers', or 'computers', or host UUID across sosreports.
+    - In Live mode, just run plugins that pass filter
+    - Progress bars for each plugin
+    - Split Faraday results into individual plugins, so each interface/device appears 'paired' across sosreports
+        - MTU
+        - Multipath count
+    - WWW
+        - Hide 'out' that should be always empty
+        - Fix results not showing when Regexp started with capital leter
+
+- New plugins (now 217!! )
+    - General
+        - move some awk to grep + awk to provide faster results with large files
+        - Fix some checks on RHEL6 + Debian + Arch Linux
+    - Some plugins
+        - networks without available ip's
+        - nova failing to migrate
+        - NUMA recomendations for NFV deployments with openstack
+        - Report number of paths in each sosreport and warn if different across them (magui)
+        - DHCP agents per network equal to number of controllers
+        - Mongodb and mysql size reporting (for when sosreport includes the required files)
+        - Sudoers 'includedir' entry missing in /etc/sudoers (indirectly via vdsm logs)
+        - Libvirt migration bug
+        - system libs overloaded
+        - non ASCII chars in limits.conf
+        - detect multipath enabled and not running
+        - Detect packages and modules to be deprecated after RHEL 7.5 next major release
+        - Check HAProxy status
+        - Check SSL Errors in HAProxy
+        - Check neutron ports in no namespace
+        - Check DC_Version for pacemaker across hosts
+        - Freeradius incompatible regex
+        - systemd unit not found
+        - systemd ordering cycle
+        - systemd sysv generator failed
+        - Kernel taint decoder
+        - extra baremetal detection
+        - kdump checker
+        - usbfs closed correctly by app
+        - usb over current
+        - neutron dead agents
+        - OCP: Check network manager
+        - Chronyd: Number of chronyd servers
+        - Pacemaker nodes in standby
+        - etc.
