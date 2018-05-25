@@ -28,13 +28,15 @@ STATIC_PATHS = [
     'images',
     'extra/robots.txt',
     'extra/favicon.ico',
-    'extra/CNAME'
+    'extra/CNAME',
+    'extra/README'
 ]
 
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
-    'extra/CNAME': {'path': 'CNAME'}
+    'extra/CNAME': {'path': 'CNAME'},
+    'extra/README': {'path': 'README.md'}
 }
 
 CACHE_CONTENT = False
