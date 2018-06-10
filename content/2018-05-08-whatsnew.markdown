@@ -29,14 +29,14 @@ Some of the changes include...
     - is_filemode and is_required_filemode to check access permissions
 - POT generation update to allow duplicate message id's
 - Framework (citellus and magui)
-    - Python optmizations
+    - Python optimizations
         - Removed duplicated code
         - Declare variables to remove to reduce memory footprint
         - On magui, save earlier instead of running twice (with lot of sosreports it was an issue)
         - Limit magui checks by default to 10 sosreports at the same time or exit
         - Use absolute paths internally when working on sosreports
     - Autogroups
-        - Magui does now check possible groups based on metadata to compare sosreports between them in addition to 'all against all' to hilight issues that affect 'controllers', or 'computers', or host UUID across sosreports.
+        - Magui does now check possible groups based on metadata to compare sosreports between them in addition to 'all against all' to highlight issues that affect 'controllers', or 'computers', or host UUID across sosreports.
     - In Live mode, just run plugins that pass filter
     - Progress bars for each plugin
     - Split Faraday results into individual plugins, so each interface/device appears 'paired' across sosreports
@@ -53,7 +53,7 @@ Some of the changes include...
     - Some plugins
         - networks without available ip's
         - nova failing to migrate
-        - NUMA recomendations for NFV deployments with openstack
+        - NUMA recommendations for NFV deployments with OpenStack
         - Report number of paths in each sosreport and warn if different across them (magui)
         - DHCP agents per network equal to number of controllers
         - Mongodb and mysql size reporting (for when sosreport includes the required files)

@@ -2,12 +2,14 @@ title: Timeline
 layout: post
 date: 2016-06-02 17:27:47 +0200
 comments: true
-tags: citellus, contribute
+tags: citellus, contribute, whatsnew
 description:
 
 ## Changelog hilights
 
 This file will contain a manually mantained log of hilights between versions, it's not a very extensive detail, but some of the bigger changes/ideas will be added here.
+
+Check [What's new]({tag}whatsnew): tag for more updated information.
 
 ## 2018-03-25
 - Implement `--find` to citellus so that it can grep across a folder set for checking historic data for tests.

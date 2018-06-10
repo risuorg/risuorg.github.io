@@ -11,6 +11,6 @@ description:
 
 Citellus has been featured in a blog post at <https://www.redhat.com/en/blog/citellus-system-configuration-validation-tool?scid=701f2000000tnTlAAI>
 
-where we hilight what you already know!
+where we highlight what you already know!
 
 Happy reading!
