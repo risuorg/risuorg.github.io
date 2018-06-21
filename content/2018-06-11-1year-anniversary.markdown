@@ -26,7 +26,7 @@ Since then, lot of [new things happened]({tag}whatsnew):
 - Presented on some public and also internal events that demonstrated the low-entry barrier on getting things detected.
     - [DevConf.cz 2018](https://devconfcz2018.sched.com/event/DJXG/detect-pitfalls-of-osp-deployments-with-citellus): [Recording](https://www.youtube.com/watch?v=SDzzqrUdn5A&t=1257s&index=1&list=LLyqRUm2tl7NOBlSL4Gz0e_Q)
     - [SuperSec 2018](https://supersec.es/programa/)
-    - [Red Hat Blog](https://www.redhat.com/en/blog/citellus-system-configuration-validation-tool?scid=701f2000000tnTlAAI)
+    - etc.
 - etc
 
 Want some numbers?
