@@ -1,0 +1,27 @@
+---
+layout: post
+title: Citellus: What's new?
+date: 2018-06-15 12:45:38 +0200
+comments: true
+tags: citellus, magui, whatsnew
+category: blog
+description:
+author: Pablo Iranzo Gómez
+status: draft
+
+---
+
+## What's new?
+
+Other posts in this category: [What's new]({tag}whatsnew)
+
+### General
+
+- RC_INFO
+    - We had discussions in the past about info that we could provide that was not really a `Error`. After some extra feedback we did add the RC_INFO exit code to the tests, so that for example `xsos` output is also provided with citellus results so that it can be quickly checked also from the Web UI
+- `overrides.json`
+    - Allows to override fields in the results json with some values, for example to force updates of the titles, urls, etc in the results returned.
+- `--anon`
+    - Allows to anonymize results by removing contents of `err` and `out` fields in `citellus.json` so that it doesn't leak any information.
+- `rhv-log-collector-analizer-live` support.
+    - Citellus now does report on `live` executions the information reported from `rhv-log-collector-analizer-live --json` thanks to the great work done by Douglas Landgraf.

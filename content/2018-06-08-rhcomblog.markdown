@@ -5,6 +5,7 @@ date: 2018-06-07 22:00:00 +0200
 comments: true
 tags: citellus, magui, whatsnew
 category: blog
+status: draft
 description:
 ---
 ## Red Hat blog post!
