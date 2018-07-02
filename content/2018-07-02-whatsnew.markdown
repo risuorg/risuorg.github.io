@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Citellus: What's new?
-date: 2018-06-15 12:45:38 +0200
+date: 2018-07-02 18:25:38 +0200
 comments: true
 tags: citellus, magui, whatsnew
 category: blog
@@ -24,4 +24,4 @@ Other posts in this category: [What's new]({tag}whatsnew)
     - Allows to anonymize results by removing contents of `err` and `out` fields in `citellus.json` so that it doesn't leak any information.
 - `rhv-log-collector-analyzer-live` support.
     - Citellus now does report on `live` executions the information reported from `rhv-log-collector-analizer-live --json` thanks to the great work done by Douglas Landgraf.
-- Since commit `9505c0cca15c5d55cdf5dbd7b5a1e271f03f7234` we've removed plugins that were previously made available as we were requested.
+- Since commit [`9505c0cca15c5d55cdf5dbd7b5a1e271f03f7234`](https://github.com/citellusorg/citellus/commit/9505c0cca15c5d55cdf5dbd7b5a1e271f03f7234) we've removed plugins that were previously made available as we were requested.
