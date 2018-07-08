@@ -18,7 +18,11 @@ It is made with several parts working together:
 
 ### Who are we?
 
-We're a group of enthusiasts working in Technical Support that have come out with this tool for detecting known issues in systems to speed up the issue resolution process.
+We're a group of technology enthusiasts working in different areas ranging from Consulting to Technical Support and Engineering that have come out with this tool for detecting known issues in systems to speed up the issue resolution process.
+
+### Quick glance:
+
+[![asciicast](https://asciinema.org/a/169814.png)](https://asciinema.org/a/169814)
 
 ### Code status
 
