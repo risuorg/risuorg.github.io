@@ -26,19 +26,19 @@ We're a group of technology enthusiasts working in different areas ranging from 
 
 ### Code status
 
-#### Citellus
+#### [Citellus](https://github.com/citellusorg/citellus)
 [![License](https://img.shields.io/github/license/citellusorg/citellus.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/citellusorg/citellus.svg?branch=master)](https://travis-ci.org/citellusorg/citellus)
 [![Coverage Status](https://coveralls.io/repos/github/citellusorg/citellus/badge.svg?branch=master)](https://coveralls.io/github/citellusorg/citellus?branch=master)
 [![Release status](https://img.shields.io/github/release/citellusorg/citellus.svg)](https://github.com/citellusorg/citellus/releases)
 [![PyPI version](https://badge.fury.io/py/citellus.svg)](https://badge.fury.io/py/citellus)
 [![](https://images.microbadger.com/badges/image/citellus/citellus.svg)](https://microbadger.com/images/citellus/citellus "Get your own image badge on microbadger.com")
-#### Nexus
+#### [Nexus](https://github.com/citellusorg/nexus)
 [![License](https://img.shields.io/github/license/citellusorg/nexus.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/citellusorg/nexus.svg?branch=master)](https://travis-ci.org/citellusorg/nexus)
 [![Coverage Status](https://coveralls.io/repos/github/citellusorg/nexus/badge.svg?branch=master)](https://coveralls.io/github/citellusorg/nexus?branch=master)
 [![Release status](https://img.shields.io/github/release/citellusorg/nexus.svg)](https://github.com/citellusorg/nexus/releases)
-#### Citmetrics
+#### [Citmetrics](https://github.com/citellusorg/citmetrics)
 [![License](https://img.shields.io/github/license/citellusorg/citmetrics.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/citellusorg/citmetrics.svg?branch=master)](https://travis-ci.org/citellusorg/citmetrics)
 [![Coverage Status](https://coveralls.io/repos/github/citellusorg/citmetrics/badge.svg?branch=master)](https://coveralls.io/github/citellusorg/citmetrics?branch=master)
