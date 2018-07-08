@@ -154,7 +154,7 @@ echo "host2" >> hostsfile
 
 #### Autogrouping
 
-[![asciicast](https://asciinema.org/a/170429.png)](https://asciinema.org/a/170429)
+<a href="https://asciinema.org/a/170429"><img src="https://asciinema.org/a/170429.png" width="100%" border=0  alt='Autogrouping dmeo'></a>
 
 Magui does check `metadata` for finding host roles or hostnames that should be checked together and generates additional json files for them.
 
