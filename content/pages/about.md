@@ -23,7 +23,10 @@ It is made with several parts working together:
 - Additional repos containing your plugins
 
 ### What's new?
-Check the entries that we're pushing to [Citellus blog]({category}blog) or subscribe to our feed.
+- Check the entries that we're pushing to [Citellus blog]({category}blog) or subscribe to our feed.
+
+- Check archives at [Archives](/archives)
+- Check tags in posts at [Tags](/tags)
 
 
 ### Who are we?
