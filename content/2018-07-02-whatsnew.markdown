@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Citellus: What's new?
+title: Citellus: What's new? 2018-07-02
 date: 2018-07-02 18:25:38 +0200
 comments: true
 tags: citellus, magui, whatsnew
