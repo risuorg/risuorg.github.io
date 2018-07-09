@@ -7,3 +7,5 @@ output
 plugins/*/*.pyc
 *.pyc
 .tox/
+.history/
+.peru/
