@@ -4,12 +4,20 @@ from __future__ import unicode_literals
 import datetime
 
 AUTHOR = u'Pablo Iranzo Gómez'
-SITENAME = u"Citellus: Validate your deployments"
+SITENAME = u"Citellus"
+SITESUBTITLE = "Automate your troubleshooting"
 SITEURL = u'/'
+# TWITTER_USERNAME = ""
 
 PATH = 'content'
 
 TIMEZONE = 'Europe/Madrid'
+
+# Put as draft content in the future
+WITH_FUTURE_DATES = False
+
+# Put full text in RSS feed
+RSS_FEED_SUMMARY_ONLY = False
 
 DEFAULT_LANG = u'en'
 DEFAULT_CATEGORY = 'tech'
@@ -116,6 +124,7 @@ SOCIAL = [
  ]
 
 DEFAULT_PAGINATION = 5
+DEFAULT_ORPHANS = 0
 
 PAGINATION_PATTERNS = (
     (1, '{base_name}/', '{base_name}/index.html'),
@@ -127,10 +136,14 @@ PAGINATION_PATTERNS = (
 RELATIVE_URLS = True
 
 # better codeblock
-MD_EXTENSIONS = [
-    'codehilite(css_class=highlight,linenums=False)',
-    'extra'
-]
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight', 'linenums': False},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
 
 # sitemap
 SITEMAP = {
@@ -168,3 +181,6 @@ MENU_INTERNAL_PAGES = (
     ('Tags', TAGS_URL, TAGS_SAVE_AS),
     ('Archives', ARCHIVES_URL, ARCHIVES_SAVE_AS),
 )
+
+# DISQUS_SITENAME = ""
+# DISQUS_DISPLAY_COUNTS = True
