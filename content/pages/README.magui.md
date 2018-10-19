@@ -1,11 +1,25 @@
+---
 title: Magui
 layout: post
 date: 2016-06-02 17:27:47 +0200
 comments: true
 tags:
 description:
+---
 
-# Introduction
+**Table of contents**
+<!-- TOC depthFrom:1 insertAnchor:true orderedList:true -->
+
+1. [Introduction](#introduction)
+2. [Highlights](#highlights)
+3. [Installation](#installation)
+4. [Usage help](#usage-help)
+
+<!-- /TOC -->
+
+
+<a id="markdown-introduction" name="introduction"></a>
+## Introduction
 
 Magui is a wrapper that calls functions from the Python library of Citellus [README.md](README.md).
 
@@ -18,6 +32,7 @@ Some problems are not detected only one one node, but are made by the aggregatio
 
 Magui aims to use Citellus for gathering the data and later, write plugins to analyze that information.
 
+<a id="markdown-highlights" name="highlights"></a>
 ## Highlights
 - Reuse saved citellus.json to speed up analisys on several files, retrigger if inconsistencies
 
@@ -32,6 +47,7 @@ Magui aims to use Citellus for gathering the data and later, write plugins to an
 Check latest changes on <Changelog.md>
 
 
+<a id="markdown-installation" name="installation"></a>
 ## Installation
 
 - Just clone the git repository and execute it from there 'or'
@@ -62,6 +78,7 @@ Check latest changes on <Changelog.md>
         - Docker passes as volume the path specified under /data so we do use that parameter with citellus for running the tests.
         - The default user id within the container is 10001 and the commands or sosreport permissions doesn't allow that user to gather all the information, so the container is required to run as the current user.
 
+<a id="markdown-usage-help" name="usage-help"></a>
 ## Usage help
 Plugins for Magui are to be written in Python, check next section for details.
 

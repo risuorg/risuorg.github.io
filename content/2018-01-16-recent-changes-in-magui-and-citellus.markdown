@@ -7,6 +7,18 @@ tags: citellus, magui, whatsnew
 category: blog
 description:
 ---
+**Table of contents**
+<!-- TOC depthFrom:1 insertAnchor:true orderedList:true -->
+
+1. [What's new?](#whats-new)
+    1. [Citellus](#citellus)
+    2. [Magui](#magui)
+2. [Wrap up!](#wrap-up)
+
+<!-- /TOC -->
+
+
+<a id="markdown-whats-new" name="whats-new"></a>
 ## What's new?
 
 During recent weeks we've been coding and performing several changes to  [Citellus](https://iranzo.github.io/blog/2017/07/26/Citellus-framework-for-detecting-known-issues/) and [Magui](https://iranzo.github.io/blog/2017/07/31/Magui-for-analysis-of-issues-across-several-hosts/).
@@ -17,6 +29,7 @@ First of all, we're going to present it at [Devconf.cz 2018](https://devconfcz20
 
 Some of the changes include...
 
+<a id="markdown-citellus" name="citellus"></a>
 ### Citellus
 - New functions for bash scripts!
     - We've created lot of functions to check different things:
@@ -47,6 +60,7 @@ Some of the changes include...
     - A new plugin in python `reboot.py` that checks for unexpected reboots
     - Spectre/Meltdown security checks!
 
+<a id="markdown-magui" name="magui"></a>
 ### Magui
 - If there's an existing `citellus.json` magui does load it to speed it up process across multiple sosreports.
 - Magui can also use `ansible-playbook` to copy citellus program to remote host and run there the command, and bring back the generated `citellus.json` so you can quickly run citellus across several hosts without having to manually perform operations or generate sosreports.
@@ -65,6 +79,7 @@ Some of the changes include...
         - Reports RHEL release across hosts and warns if is different across hosts
 - Enable `quiet` mode on the data received from citellus as well as local plugins, so only outputs with ERROR or different output on sosreports is shown, even on magui plugins.
 
+<a id="markdown-wrap-up" name="wrap-up"></a>
 ## Wrap up!
 
 As you can see we've been busy trying to improve plugins, Citellus framework and Magui as well.
