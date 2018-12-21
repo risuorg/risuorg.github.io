@@ -61,7 +61,7 @@ PLUGIN_PATHS = ['plugins']
 
 PLUGINS = [
     'better_codeblock_line_numbering',
-    'better_figures_and_images',
+    # 'better_figures_and_images',
     'sitemap',
     # 'yuicompressor',
 ]
