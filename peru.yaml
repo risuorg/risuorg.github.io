@@ -1,26 +1,73 @@
 imports:
     # The dircolors file just goes at the root of our project.
-    sitemap: plugins/
-    better_codeblock_line_numbering: plugins/
-    better_figures_and_images: plugins/
-    yuicompressor: plugins/
+    pelican-blueidea: themes/pelican-blueidea/
+    plugins|sitemap: plugins/
+    plugins|yuicompressor: plugins/
+    plugins|better_figures_and_images: plugins/
+    plugins|better_codeblock_line_numbering: plugins/
+    plugins|extract_toc: plugins/
+    plugins|tipue_search: plugins/
+    plugins|liquid_tags: plugins/
+    plugins|neighbors: plugins/
+    plugins|render_math: plugins/
+    plugins|related_posts: plugins/
+    plugins|share_post: plugins/
+    plugins|series: plugins/
+    plugins|assets: plugins/
+    plugins|post_stats: plugins/
+    revealmd: plugins/revealmd/
 
-git module sitemap:
-    url: git@github.com:getpelican/pelican-plugins.git
+
+git module elegant:
+    url: https://github.com/Pelican-Elegant/elegant.git
+
+git module pelican-blueidea:
+    url: https://github.com/nasskach/pelican-blueidea.git
+
+git module revealmd:
+    url: https://github.com/iranzo/pelican-revealmd/
+
+git module plugins:
+    url: https://github.com/getpelican/pelican-plugins.git
+
+rule sitemap:
     pick: sitemap
-    rev: ead70548ce2c78ed999273e265e3ebe13b747d83
 
-git module yuicompressor:
-    url: git@github.com:getpelican/pelican-plugins.git
+rule yuicompressor:
     pick: yuicompressor
-    rev: ead70548ce2c78ed999273e265e3ebe13b747d83
 
-git module better_figures_and_images:
-    url: git@github.com:getpelican/pelican-plugins.git
+rule better_figures_and_images:
     pick: better_figures_and_images
-    rev: ead70548ce2c78ed999273e265e3ebe13b747d83
 
-git module better_codeblock_line_numbering:
-    url: git@github.com:getpelican/pelican-plugins.git
+rule better_codeblock_line_numbering:
     pick: better_codeblock_line_numbering
-    rev: ead70548ce2c78ed999273e265e3ebe13b747d83
+
+rule extract_toc:
+    pick: extract_toc
+
+rule tipue_search:
+    pick: tipue_search
+
+rule liquid_tags:
+    pick: liquid_tags
+
+rule neighbors:
+    pick: neighbors
+
+rule render_math:
+    pick: render_math
+
+rule related_posts:
+    pick: related_posts
+
+rule share_post:
+    pick: share_post
+
+rule series:
+    pick: series
+
+rule assets:
+    pick: assets
+
+rule post_stats:
+    pick: post_stats

@@ -1,11 +1,13 @@
+output/
+.peru/
+plugins/
+themes/
 .sync/
-pelicanconf.pyc
 .idea/
 pelican.pid
 srv.pid
 output
-plugins/*/*.pyc
+**.pyc
 *.pyc
 .tox/
 .history/
-.peru/
