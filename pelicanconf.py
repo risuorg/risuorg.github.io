@@ -49,7 +49,7 @@ EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
     'extra/README': {'path': 'README.md'},
     'extra/citellus.json': {'path': 'citellus.json'},
-    'extra/citellus.html': {'path': 'citellus.html'}
+    'extra/citellus.web': {'path': 'citellus.html'}
 }
 
 EXTRA_TEMPLATES_PATHS = [
