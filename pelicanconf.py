@@ -47,7 +47,9 @@ EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/CNAME': {'path': 'CNAME'},
-    'extra/README': {'path': 'README.md'}
+    'extra/README': {'path': 'README.md'},
+    'extra/citellus.json': {'path': 'citellus.json'},
+    'extra/citellus.html': {'path': 'citellus.html'}
 }
 
 EXTRA_TEMPLATES_PATHS = [
