@@ -10,6 +10,7 @@ description:
 <img src="../images/citellus-mini.png" width="20%" border=0 align="right" alt='Citellus logo'>
 
 **Table of contents**
+
 <!-- TOC depthFrom:1 insertAnchor:true orderedList:true -->
 
 1. [Introduction](#introduction)
@@ -24,8 +25,8 @@ description:
 
 <!-- /TOC -->
 
-
 <a id="markdown-introduction" name="introduction"></a>
+
 ## Introduction
 
 Citellus is a program that should help with system configuration validation on either live system or any sort of snapshot of the filesystem.
@@ -35,11 +36,13 @@ Via execution of 'plugins' it reports status on each one execution against the s
 Please if you have any idea on any improvements please do not hesitate to open an issue.
 
 <a id="markdown-highlights" name="highlights"></a>
+
 ## Highlights
+
 - Plugins written in your language of choice.
 - Allows to dump output to json file to be processed by other tools.
-    - Allow to visualize html from json output.
-    - Check our sample at: [Citellus-www](/citellus.html)
+  - Allow to visualize html from json output.
+  - Check our sample at: [Citellus-www](/citellus.html)
 - Ansible playbook support.
 - Save / restore default settings
 
@@ -48,37 +51,39 @@ Check latest changes on [Changelog.md](Changelog.md)
 Check for plugins listing on [citellusclient/plugins/](citellusclient/plugins/)
 
 <a id="markdown-installation" name="installation"></a>
+
 ## Installation
 
 - Just clone the git repository and execute it from there 'or'
 - use 'pipsi' or create a python virtual env to install package 'citellus'
-    ~~~sh
-    # pipsi install citellus
-    Already using interpreter /usr/bin/python3
-    Using base prefix '/usr'
-    New python executable in /home/iranzo/.local/venvs/citellus/bin/python3
-    Also creating executable in /home/iranzo/.local/venvs/citellus/bin/python
-    Installing setuptools, pip, wheel...done.
-    Collecting citellus
-    Installing collected packages: citellus
-    Successfully installed citellus-0.1.0.dev1072
-      Linked script /home/iranzo/.local/bin/citellus.py
-      Linked script /home/iranzo/.local/bin/magui.py
-    Done.
-    ~~~
-    - Pipsi will take care of installing a virtual environment and link to binary folder so you can call citellus.py or magui.py directly
-    - Remember that pypi package might not contain all the latests plugins features as the github repo one.
+  ```sh
+  # pipsi install citellus
+  Already using interpreter /usr/bin/python3
+  Using base prefix '/usr'
+  New python executable in /home/iranzo/.local/venvs/citellus/bin/python3
+  Also creating executable in /home/iranzo/.local/venvs/citellus/bin/python
+  Installing setuptools, pip, wheel...done.
+  Collecting citellus
+  Installing collected packages: citellus
+  Successfully installed citellus-0.1.0.dev1072
+    Linked script /home/iranzo/.local/bin/citellus.py
+    Linked script /home/iranzo/.local/bin/magui.py
+  Done.
+  ```
+  - Pipsi will take care of installing a virtual environment and link to binary folder so you can call citellus.py or magui.py directly
+  - Remember that pypi package might not contain all the latests plugins features as the github repo one.
 - Container:
-    - Use our automatically built container in docker hub:
-        - ```docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z citellus/citellus:latest /data```
-    - or build your own using the included ```Dockerfile``` in the git checkout.
-        - ```docker build . -f Dockerfile.centos7-atomic -t citellus:latest``` # (from git checkout, then note image id)
-        - ```docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z citellus:latest /data```
-    - Notes about using docker:
-        - Docker passes as volume the path specified under /data so we do use that parameter with citellus for running the tests.
-        - The default user id within the container is 10001 and the commands or sosreport permissions doesn't allow that user to gather all the information, so the container is required to run as the current user.
+  - Use our automatically built container in docker hub:
+    - `docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z citellus/citellus:latest /data`
+  - or build your own using the included `Dockerfile` in the git checkout.
+    - `docker build . -f Dockerfile.centos7-atomic -t citellus:latest` # (from git checkout, then note image id)
+    - `docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z citellus:latest /data`
+  - Notes about using docker:
+    - Docker passes as volume the path specified under /data so we do use that parameter with citellus for running the tests.
+    - The default user id within the container is 10001 and the commands or sosreport permissions doesn't allow that user to gather all the information, so the container is required to run as the current user.
 
 <a id="markdown-usage-help" name="usage-help"></a>
+
 ## Usage help
 
 We are developing framework in python, the bash framework has been deprecated. Python framework is the only supported framework.
@@ -150,7 +155,9 @@ Check how does it look in an execution at:
 <a href="https://asciinema.org/a/169814"><img src="https://asciinema.org/a/169814.png" width="100%" border=0  alt='Citellus demo'></a>
 
 <a id="markdown-plugins-and-their-descriptions" name="plugins-and-their-descriptions"></a>
+
 ## Plugins and their descriptions
+
 This is new feature of citellus that will show you available scripts and their description.
 
 ```
@@ -166,7 +173,9 @@ This is new feature of citellus that will show you available scripts and their d
 ```
 
 <a id="markdown-doing-a-live-check-example" name="doing-a-live-check-example"></a>
+
 ## Doing a live check example
+
 This is an example of execution of Citellus using all openstack and pacemaker tests collections.
 
 ```
@@ -195,8 +204,10 @@ INFO:citellus:using default plugin path
 ```
 
 <a id="markdown-doing-a-fs-snapshot-check-example" name="doing-a-fs-snapshot-check-example"></a>
+
 ## Doing a fs snapshot check example
-This is an example of execution of Citellus using ```pacemaker``` and ```openstack``` filter against fs snapshot.
+
+This is an example of execution of Citellus using `pacemaker` and `openstack` filter against fs snapshot.
 
 ```
 ./citellus.py -q -i pacemaker -i openstack sosreport-undercloud-0.redhat.local-20171117212710/
@@ -224,7 +235,9 @@ INFO:citellus:using default plugin path
 ```
 
 <a id="markdown-html-interface" name="html-interface"></a>
+
 ## HTML Interface
+
 - Create by using `--output $FOLDER` and `--web`, open the generated `citellus.html`.
 
 <img src="../images/www.png" height="40%" border=0 alt='WWW interface capture'>
@@ -232,12 +245,15 @@ INFO:citellus:using default plugin path
 - Citellus-web now supports the parsing of magui.json.
 
 - It's possible to tell the citellus.html which json to parse by adding json=<jsonfile> as a query string:
-~~~
+
+```
 http://host/citellus.html?json=magui.json
-~~~
+```
 
 <a id="markdown-ansible-playbooks" name="ansible-playbooks"></a>
+
 ## Ansible playbooks
+
 Citellus can also run Ansible playbooks via extension
 
 The are some additional conventions that are detailed in [ansible-playbooks.md](doc/ansible-playbooks.md) that determine how to code them to be executed in live or snapshoot mode.
@@ -246,21 +262,21 @@ Commands have been extended to allow `--list-plugins` to list them and include /
 
 All of them must end in `.yml`.
 
-~~~
+```
 found #1 extensions / found #0 tests at default path
 mode: fs snapshot .
 # Running extension ansible-playbook
 # /home/iranzo/DEVEL/citellus/citellus/playbooks/system/clock-ntpstat.yml: skipped
     Skipped for incompatible operating mode
-~~~
+```
 
 vs
 
-~~~
+```
 found #2 extensions with #2 plugins
 mode: live
 # /home/iranzo/DEVEL/citellus/citellusclient/plugins/ansible/openstack/rabbitmq/ha-policies.yml: okay
 # /home/iranzo/DEVEL/citellus/citellusclient/plugins/ansible/system/clock-ntpstat.yml: failed
     {"changed": false, "cmd": "ntpstat", "msg": "[Errno 2] No such file or directory",
 
-~~~
+```

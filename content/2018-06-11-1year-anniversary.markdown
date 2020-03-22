@@ -8,6 +8,7 @@ category: blog
 description:
 author: Pablo Iranzo Gómez
 ---
+
 ## Time flies!
 
 ![We're 1 year old]({attach}images/1year.jpg)
@@ -24,9 +25,9 @@ Since then, lot of [new things happened]({tag}whatsnew):
 - Web Interface
 - More than 670+ plugins
 - Presented on some public and also internal events that demonstrated the low-entry barrier on getting things detected.
-    - [DevConf.cz 2018](https://devconfcz2018.sched.com/event/DJXG/detect-pitfalls-of-osp-deployments-with-citellus): [Recording](https://www.youtube.com/watch?v=SDzzqrUdn5A&t=1257s&index=1&list=LLyqRUm2tl7NOBlSL4Gz0e_Q)
-    - [SuperSec 2018](https://supersec.es/programa/)
-    - etc.
+  - [DevConf.cz 2018](https://devconfcz2018.sched.com/event/DJXG/detect-pitfalls-of-osp-deployments-with-citellus): [Recording](https://www.youtube.com/watch?v=SDzzqrUdn5A&t=1257s&index=1&list=LLyqRUm2tl7NOBlSL4Gz0e_Q)
+  - [SuperSec 2018](https://supersec.es/programa/)
+  - etc.
 - etc
 
 Want some numbers?

@@ -8,6 +8,7 @@ category: blog
 status: draft
 description:
 ---
+
 ## Red Hat blog post!
 
 Citellus has been featured in a blog post at <https://www.redhat.com/en/blog/citellus-system-configuration-validation-tool?scid=701f2000000tnTlAAI>

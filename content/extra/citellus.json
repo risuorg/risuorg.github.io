@@ -19,33 +19,33 @@
       "id": "a937d945ac70eaa8da2861b25b5b4d34",
       "subcategory": "security/spectre"
     },
-      "2d6b2fb44ccf3b64b3c442a61d2863b5a3c7f6c40b42330a1a1ab1ba88d2362ff06a6b3bf070143927a683a80664ebd7fa7842e79c4a51bdc3265a69b7d5491b": {
-          "category": "Profiles: sysinfo-lifecycle",
-          "hash": "c0aa748d26825c15585e9e8defacd72fe5fa9a51ca4c4a6cc0c7effc51019f6add8c048253f060ded50995159b1df2ac11a821508cb5cc00b8fcc2e964fe110e",
-          "subcategory": "",
-          "plugin": "/citellus/citellusclient/plugins/profiles/sysinfo-lifecycle.txt",
-          "description": "Lifecycle information data for installed products",
-          "priority": 1000,
-          "long_name": "Lifecycle information data for installed products",
-          "bugzilla": "",
-          "result": {
-            "out": "",
-            "err": "[{\"plugin_id\": \"b2a21b7b04e83a38d4d4876486655ce4690cde1abe4f2e97689fd3360ff81d11d82ce8106091c3d32a80fdb4f5dfad1ef29293b4d23da73dee4cdb5ef52e6555\", \"rc\": 10, \"err\": \"\", \"plugin\": \"/core/sysinfo/lifecycle/rhel.sh\"}, {\"plugin_id\": \"ad77087197a67beccada4e11d4506c9f8474a3aefa6a49956717730d4968720fc04cc45a4795c84e247037a9185b86a74dafd5ece5caed6ee6ef64a618bce311\", \"rc\": 40, \"err\": \"Your system is within the year period to become unsupported\", \"plugin\": \"/core/sysinfo/lifecycle/rh-openstack.sh\"}]",
-            "rc": 40
-          },
-          "components": [
-            "cf98a84413c72612b92b945dac16b72d9d8155eff737f17425fa16ab1198b2427926aa98b175997f4c261e5d0815fd05b1db958be2b5b72125977f0383cfd36b",
-            "b2a21b7b04e83a38d4d4876486655ce4690cde1abe4f2e97689fd3360ff81d11d82ce8106091c3d32a80fdb4f5dfad1ef29293b4d23da73dee4cdb5ef52e6555",
-            "4c315df7770b6f2062806508c84f948f8b8747e023791cc9905ef8294e08ea5ea57f683e7daae7de315c296fb2b26b69ba0a174e093ff1079f4f2d198683828a",
-            "08e87018ebbcdd7753101893812f72ede7b58f162212f55358997a25fc9069566ba9371871e47b15c6c4262a3fbeecd48efdfda1383f7f52d31d33074219b229",
-            "64346409fd52ab1fbb67a4aac4a233f249878a15a2c2e403bc4f18c49f464e4737698df68c2ad3d5baae5817f6f0e848f46fcb37eae04d1d8e9c8953f9e31364",
-            "ad77087197a67beccada4e11d4506c9f8474a3aefa6a49956717730d4968720fc04cc45a4795c84e247037a9185b86a74dafd5ece5caed6ee6ef64a618bce311"
-          ],
-          "time": 0,
-          "backend": "profile",
-          "id": "2d6b2fb44ccf3b64b3c442a61d2863b5a3c7f6c40b42330a1a1ab1ba88d2362ff06a6b3bf070143927a683a80664ebd7fa7842e79c4a51bdc3265a69b7d5491b",
-          "name": "Profiles: sysinfo-lifecycle"
-        },
+    "2d6b2fb44ccf3b64b3c442a61d2863b5a3c7f6c40b42330a1a1ab1ba88d2362ff06a6b3bf070143927a683a80664ebd7fa7842e79c4a51bdc3265a69b7d5491b": {
+      "category": "Profiles: sysinfo-lifecycle",
+      "hash": "c0aa748d26825c15585e9e8defacd72fe5fa9a51ca4c4a6cc0c7effc51019f6add8c048253f060ded50995159b1df2ac11a821508cb5cc00b8fcc2e964fe110e",
+      "subcategory": "",
+      "plugin": "/citellus/citellusclient/plugins/profiles/sysinfo-lifecycle.txt",
+      "description": "Lifecycle information data for installed products",
+      "priority": 1000,
+      "long_name": "Lifecycle information data for installed products",
+      "bugzilla": "",
+      "result": {
+        "out": "",
+        "err": "[{\"plugin_id\": \"b2a21b7b04e83a38d4d4876486655ce4690cde1abe4f2e97689fd3360ff81d11d82ce8106091c3d32a80fdb4f5dfad1ef29293b4d23da73dee4cdb5ef52e6555\", \"rc\": 10, \"err\": \"\", \"plugin\": \"/core/sysinfo/lifecycle/rhel.sh\"}, {\"plugin_id\": \"ad77087197a67beccada4e11d4506c9f8474a3aefa6a49956717730d4968720fc04cc45a4795c84e247037a9185b86a74dafd5ece5caed6ee6ef64a618bce311\", \"rc\": 40, \"err\": \"Your system is within the year period to become unsupported\", \"plugin\": \"/core/sysinfo/lifecycle/rh-openstack.sh\"}]",
+        "rc": 40
+      },
+      "components": [
+        "cf98a84413c72612b92b945dac16b72d9d8155eff737f17425fa16ab1198b2427926aa98b175997f4c261e5d0815fd05b1db958be2b5b72125977f0383cfd36b",
+        "b2a21b7b04e83a38d4d4876486655ce4690cde1abe4f2e97689fd3360ff81d11d82ce8106091c3d32a80fdb4f5dfad1ef29293b4d23da73dee4cdb5ef52e6555",
+        "4c315df7770b6f2062806508c84f948f8b8747e023791cc9905ef8294e08ea5ea57f683e7daae7de315c296fb2b26b69ba0a174e093ff1079f4f2d198683828a",
+        "08e87018ebbcdd7753101893812f72ede7b58f162212f55358997a25fc9069566ba9371871e47b15c6c4262a3fbeecd48efdfda1383f7f52d31d33074219b229",
+        "64346409fd52ab1fbb67a4aac4a233f249878a15a2c2e403bc4f18c49f464e4737698df68c2ad3d5baae5817f6f0e848f46fcb37eae04d1d8e9c8953f9e31364",
+        "ad77087197a67beccada4e11d4506c9f8474a3aefa6a49956717730d4968720fc04cc45a4795c84e247037a9185b86a74dafd5ece5caed6ee6ef64a618bce311"
+      ],
+      "time": 0,
+      "backend": "profile",
+      "id": "2d6b2fb44ccf3b64b3c442a61d2863b5a3c7f6c40b42330a1a1ab1ba88d2362ff06a6b3bf070143927a683a80664ebd7fa7842e79c4a51bdc3265a69b7d5491b",
+      "name": "Profiles: sysinfo-lifecycle"
+    },
     "e0d49de389092ab1fa8b67386eb8e128b845e064c1f5c4085f9b35a17b6a0357c96280069d3c1783f4a5207663b6b4108c3f696afd1b4b87390e59d32ecbbf7d": {
       "category": "Profiles: sysinfo-openshift",
       "hash": "e210408fd61ca67fadf91a373152c0e66a9fe3b284af761c5661b1b41d680624bee0af0c30a180f570232a4d521095711043fc75a3ea6fac8604ccd6c709729e",
@@ -71,7 +71,7 @@
       "id": "e0d49de389092ab1fa8b67386eb8e128b845e064c1f5c4085f9b35a17b6a0357c96280069d3c1783f4a5207663b6b4108c3f696afd1b4b87390e59d32ecbbf7d",
       "name": "Profiles: sysinfo-openshift"
     },
-        "389a21ef4b63917775d9aec44fe34d595108c524e2802ed515584c2a379390879c1693ae6d4d7f1f8c066320b79eed970c81d4c55027bc045b44923bc05dc245": {
+    "389a21ef4b63917775d9aec44fe34d595108c524e2802ed515584c2a379390879c1693ae6d4d7f1f8c066320b79eed970c81d4c55027bc045b44923bc05dc245": {
       "category": "Profiles: sysinfo-openstack",
       "hash": "583b184e35f73d1d099783c4977c9e6184832c624073144787a12d377b4ea28e69c4deaa1873031c5b830aeff27258d6f4456de8793e4cb5a7b148222440bc52",
       "subcategory": "",
@@ -147,7 +147,8 @@
       "backend": "profile",
       "id": "d919fa1e68d9255a1cb5f239e452445d7389482a8e360280db8851b8c49d6de12bf555d9918121fd3706d6ed7d4ee986ac1bceb848d7c92354d4b6cc1b3e91f2",
       "name": "Profiles: cluster"
-    }, "2d6b2fb44ccf3b64b3c442a61d2863b5a3c7f6c40b42330a1a1ab1ba88d2362ff06a6b3bf070143927a683a80664ebd7fa7842e79c4a51bdc3265a69b7d5491b": {
+    },
+    "2d6b2fb44ccf3b64b3c442a61d2863b5a3c7f6c40b42330a1a1ab1ba88d2362ff06a6b3bf070143927a683a80664ebd7fa7842e79c4a51bdc3265a69b7d5491b": {
       "category": "Profiles: sysinfo-lifecycle",
       "hash": "c0aa748d26825c15585e9e8defacd72fe5fa9a51ca4c4a6cc0c7effc51019f6add8c048253f060ded50995159b1df2ac11a821508cb5cc00b8fcc2e964fe110e",
       "subcategory": "",
@@ -233,7 +234,7 @@
         "err": "File /cases/02016541/sosreport-controller-0.02016541-20180225232251/etc/mistral/policy.json is not accessible in read mode",
         "out": ""
       },
-      "time": 5.1975250244140625e-05,
+      "time": 5.1975250244140625e-5,
       "path": "${CITELLUS_ROOT}/etc/mistral/policy.json",
       "backend": "faraday",
       "id": "9d1737f8fd842b76f5dc35d3d9a8131f-8d3e2ff1256a3d8e80d8d70350476bda",
@@ -501,7 +502,7 @@
         "err": "f28ac7fbc6abd6465d5bfb23e7e387d6",
         "out": ""
       },
-      "time": 8.20159912109375e-05,
+      "time": 8.20159912109375e-5,
       "path": "${CITELLUS_ROOT}/etc/redhat-release",
       "backend": "faraday",
       "id": "ab8f8f0065fea5dad5ebb6f02639311a",
@@ -826,7 +827,7 @@
         "err": "80ff0c10121ba1a6cb98dfd9a2985148",
         "out": ""
       },
-      "time": 4.792213439941406e-05,
+      "time": 4.792213439941406e-5,
       "path": "${CITELLUS_ROOT}/etc/ironic/policy.json",
       "backend": "faraday",
       "id": "9d1737f8fd842b76f5dc35d3d9a8131f-05b75a27d3bda0444a368761b185ebf2",
@@ -998,7 +999,7 @@
         "err": "73fdaddc09b57943cd831de703942c04",
         "out": ""
       },
-      "time": 5.1975250244140625e-05,
+      "time": 5.1975250244140625e-5,
       "path": "${CITELLUS_ROOT}/etc/ceilometer/policy.json",
       "backend": "faraday",
       "id": "9d1737f8fd842b76f5dc35d3d9a8131f-2574a413974df7c035284120a768f76c",
@@ -1226,7 +1227,7 @@
         "err": "File /cases/02016541/sosreport-controller-0.02016541-20180225232251/etc/aodh/policy.json is not accessible in read mode",
         "out": ""
       },
-      "time": 3.218650817871094e-05,
+      "time": 3.218650817871094e-5,
       "path": "${CITELLUS_ROOT}/etc/aodh/policy.json",
       "backend": "faraday",
       "id": "9d1737f8fd842b76f5dc35d3d9a8131f-c920e9985393e10435b0e7d960157e6b",
@@ -1435,7 +1436,7 @@
         "err": "File /cases/02016541/sosreport-controller-0.02016541-20180225232251/etc/containers/policy.json is not accessible in read mode",
         "out": ""
       },
-      "time": 3.0994415283203125e-05,
+      "time": 3.0994415283203125e-5,
       "path": "${CITELLUS_ROOT}/etc/containers/policy.json",
       "backend": "faraday",
       "id": "9d1737f8fd842b76f5dc35d3d9a8131f-9105dd1ec8e2dca94759aae17bdec589",
@@ -1703,7 +1704,7 @@
         "err": "File /cases/02016541/sosreport-controller-0.02016541-20180225232251/etc/panko/policy.json is not accessible in read mode",
         "out": ""
       },
-      "time": 3.814697265625e-05,
+      "time": 3.814697265625e-5,
       "path": "${CITELLUS_ROOT}/etc/panko/policy.json",
       "backend": "faraday",
       "id": "9d1737f8fd842b76f5dc35d3d9a8131f-85c725366322555aa5f30a6a5d154a98",
@@ -1723,7 +1724,7 @@
         "err": "a4f29d0f75bbc04f1d83a1abdf0fda6f",
         "out": ""
       },
-      "time": 4.887580871582031e-05,
+      "time": 4.887580871582031e-5,
       "path": "${CITELLUS_ROOT}/etc/glance/policy.json",
       "backend": "faraday",
       "id": "9d1737f8fd842b76f5dc35d3d9a8131f-0c2a33aae4365e9a7c67c875e6970481",
@@ -1781,7 +1782,7 @@
         "err": "e59e8659d249f90d6e1d90ca43c57bf1",
         "out": ""
       },
-      "time": 7.009506225585938e-05,
+      "time": 7.009506225585938e-5,
       "path": "${CITELLUS_ROOT}/etc/cinder/policy.json",
       "backend": "faraday",
       "id": "9d1737f8fd842b76f5dc35d3d9a8131f-24f8a140e787f5989d09b5737e4d3219",
@@ -1896,7 +1897,7 @@
         "err": "File /cases/02016541/sosreport-controller-0.02016541-20180225232251/etc/machine-id is not accessible in read mode",
         "out": ""
       },
-      "time": 4.410743713378906e-05,
+      "time": 4.410743713378906e-5,
       "path": "${CITELLUS_ROOT}/etc/machine-id",
       "backend": "faraday",
       "id": "06ff981b3b275ca06445b311c1948dba",
@@ -2088,7 +2089,7 @@
         "err": "File /cases/02016541/sosreport-controller-0.02016541-20180225232251/etc/zaqar/policy.json is not accessible in read mode",
         "out": ""
       },
-      "time": 2.9087066650390625e-05,
+      "time": 2.9087066650390625e-5,
       "path": "${CITELLUS_ROOT}/etc/zaqar/policy.json",
       "backend": "faraday",
       "id": "9d1737f8fd842b76f5dc35d3d9a8131f-1b3ac0bbb1929dc41ece16f836a78781",
@@ -2184,7 +2185,7 @@
         "err": "f574a3245f396688a01ce69b67013786",
         "out": ""
       },
-      "time": 6.604194641113281e-05,
+      "time": 6.604194641113281e-5,
       "path": "${CITELLUS_ROOT}/etc/heat/policy.json",
       "backend": "faraday",
       "id": "9d1737f8fd842b76f5dc35d3d9a8131f-8e17ae60d89b06cd860f3b0a18d04df3",
@@ -2553,7 +2554,7 @@
         "err": "Red Hat Enterprise Linux Server release 7.4 (Maipo)\n",
         "out": ""
       },
-      "time": 6.103515625e-05,
+      "time": 6.103515625e-5,
       "path": "${CITELLUS_ROOT}/etc/redhat-release",
       "backend": "winston",
       "id": "449a2b8c00582f6b7bf9381af5cb0491",
@@ -3083,7 +3084,7 @@
         "err": "File /cases/02016541/sosreport-controller-0.02016541-20180225232251/etc/machine-id is not accessible in read mode",
         "out": ""
       },
-      "time": 6.198883056640625e-05,
+      "time": 6.198883056640625e-5,
       "path": "${CITELLUS_ROOT}/etc/machine-id",
       "backend": "winston",
       "id": "7af9cbe44d83d74a7b571c9970e05a28",
@@ -3122,7 +3123,7 @@
         "err": "07c85d1e31e4ba8eb3e98d2ece314570",
         "out": ""
       },
-      "time": 6.508827209472656e-05,
+      "time": 6.508827209472656e-5,
       "path": "${CITELLUS_ROOT}/etc/sahara/policy.json",
       "backend": "faraday",
       "id": "9d1737f8fd842b76f5dc35d3d9a8131f-71d3ade2427a04f355f510b557fb8593",
@@ -3370,7 +3371,7 @@
         "err": "5b76b0eef9af8a2300673e0553f609f9",
         "out": ""
       },
-      "time": 6.890296936035156e-05,
+      "time": 6.890296936035156e-5,
       "path": "${CITELLUS_ROOT}/etc/nova/policy.json",
       "backend": "faraday",
       "id": "9d1737f8fd842b76f5dc35d3d9a8131f-d8a54fdeb87d57bd550c678391c32eab",

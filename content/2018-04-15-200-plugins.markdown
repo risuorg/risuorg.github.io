@@ -14,7 +14,7 @@ Hi
 
 During this weekend we've added some pending reviews and closed some issues that bumped current plugin number to 200.
 
-~~~
+```
 bugzilla : 20 ['docker: 1', 'httpd: 1', 'openstack/ceilometer: 1', 'openstack/ceph: 1', 'openstack/httpd: 1', 'openstack/keystone: 1', 'openstack/keystone/templates: 1', 'openstack/neutron: 5', 'openstack/nova: 4', 'openstack/swift: 1', 'openstack/tripleo: 2', 'systemd: 1']
 ceph : 3 []
 cluster : 1 []
@@ -33,7 +33,7 @@ system : 54 ['iscsi: 1']
 virtualization : 1 []
 -------
 total : 200
-~~~
+```
 
 Each plugin does enable at least one test performed against your system or sosreport that ease the issue detection task or provide proactive data before an issue affects it!
 

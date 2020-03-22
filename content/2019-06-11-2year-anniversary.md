@@ -8,6 +8,7 @@ category: blog
 description:
 author: Pablo Iranzo Gómez
 ---
+
 ## Time flies!
 
 ![We're 2 year old]({attach}images/2year.jpg)
@@ -19,7 +20,7 @@ Last year we got [this article]({filename}2018-06-11-1year-anniversary.markdown)
 This year not a lot of changes happened compared to the last one:
 
 - The amount of plugins have increased to 874 (counting internal ones)
-    - Updates to some plugins like lifecycle of new releases
+  - Updates to some plugins like lifecycle of new releases
 - Our first Katacoda scenario on how to install and use it: [How to use citellus](https://www.katacoda.com/iranzo/scenarios/citellus)
 - Presentation on meetup [Emerging Tech Valencia](https://www.meetup.com/es-ES/Emerging-Tech-Valencia/)
 

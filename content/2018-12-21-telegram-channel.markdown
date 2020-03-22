@@ -7,7 +7,6 @@ tags: citellus, magui, whatsnew
 category: blog
 description:
 author: Pablo Iranzo Gómez
-
 ---
 
 Hey!, we've just started a telegram channel for Citellus users at <https://t.me/citellusUG> in addition to our FreeNode IRC channel #citellus.

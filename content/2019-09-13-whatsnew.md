@@ -7,8 +7,8 @@ tags: citellus, magui, whatsnew
 category: blog
 description:
 author: Pablo Iranzo Gómez
-
 ---
+
 ## What's new?
 
 Other posts in this category: [What's new]({tag}whatsnew)
