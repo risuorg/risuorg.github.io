@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Citellus: 3 year anniversary
-date: 2020-06-11 07:45:38 +0200
+date: 2020-06-11 07:55:38 +0200
 comments: true
 tags: citellus, magui
 category: blog
