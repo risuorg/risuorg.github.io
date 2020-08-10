@@ -3,8 +3,8 @@ from __future__ import unicode_literals
 
 import datetime
 
-## THINGS TO CONFIGURE
-## ---------------------------------------------------------------------
+# THINGS TO CONFIGURE
+# ---------------------------------------------------------------------
 
 AUTHOR = "Pablo Iranzo Gómez"
 SITENAME = "Citellus"
@@ -41,7 +41,7 @@ AMAZON_ONELINK = "b63a2115-85f7-43a9-b169-5f4c8c275655"
 # GOOGLE_ANALYTICS tracking ID
 GOOGLE_ANALYTICS = "UA-81705-14"
 
-## Configure if you use Disqus for comments
+# Configure if you use Disqus for comments
 # DISQUS_SITENAME = "iranzo-github-io"
 # DISQUS_DISPLAY_COUNTS = True
 
@@ -63,8 +63,8 @@ EXTRA_TEMPLATES_PATHS = [
 STATIC_PATHS = ["images", "extra"]
 
 
-## ONLY TOUCH IF YOU KNOW WHAT YOU'RE DOING!
-## ---------------------------------------------------------------------
+# ONLY TOUCH IF YOU KNOW WHAT YOU'RE DOING!
+# ---------------------------------------------------------------------
 
 PATH = "content"
 
@@ -144,7 +144,7 @@ RELATED_POSTS_LABEL = "Keep Reading"
 SHARE_POST_INTRO = "Like this post? Share on:"
 COMMENTS_INTRO = ""
 
-FILENAME_METADATA = "(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)"
+FILENAME_METADATA = r"(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)"
 USE_FOLDER_AS_CATEGORY = False
 
 SEARCH_BOX = False
