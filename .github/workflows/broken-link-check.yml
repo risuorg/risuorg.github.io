@@ -1,7 +1,6 @@
 on:
   schedule:
-    - cron: "0 * * * *"
-    # - cron: 0 0 1 * * # run monthly
+    - cron: "0 0 * * *" # daily
   repository_dispatch: # run manually
     types: [check-link]
   # push:
