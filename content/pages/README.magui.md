@@ -18,12 +18,13 @@ description:
         - [Running a check](#running-a-check)
             - [Running a check against remote hosts](#running-a-check-against-remote-hosts)
             - [Autogrouping](#autogrouping)
+
 - [Plugin development for Magui](#plugin-development-for-magui)
 
 <!-- /TOC -->
 
-
 <a id="markdown-introduction" name="introduction"></a>
+
 ## Introduction
 
 Magui is a wrapper that calls functions from the Python library of Citellus [README]({filename}README.citellus.md).
@@ -37,8 +38,8 @@ Some problems are not detected only on one node, but are made by the aggregation
 
 Magui aims to use Citellus for gathering the data and later, write plugins to analyze that information.
 
-
 <a id="markdown-highlights" name="highlights"></a>
+
 ## Highlights
 
 - Reuse saved citellus.json to speed up analisys on several files, retrigger if inconsistencies
@@ -53,8 +54,8 @@ Magui aims to use Citellus for gathering the data and later, write plugins to an
 
 Check latest changes on <Changelog.md>
 
-
 <a id="markdown-installation" name="installation"></a>
+
 ## Installation
 
 - Just clone the git repository and execute it from there 'or'
@@ -85,8 +86,8 @@ Check latest changes on <Changelog.md>
     - Docker passes as volume the path specified under /data so we do use that parameter with citellus for running the tests.
     - The default user id within the container is 10001 and the commands or sosreport permissions doesn't allow that user to gather all the information, so the container is required to run as the current user.
 
-
 <a id="markdown-usage-help" name="usage-help"></a>
+
 ## Usage help
 
 Plugins for Magui are to be written in Python, check next section for details.
@@ -149,6 +150,7 @@ In a directory structure as:
 `docker run --user=$(id -u) --rm --entrypoint="magui.py" -v /path/to/my/sosreports/:/data:Z citellus:latest -q /data/sosreport-overcloud-controller-0/ /data/sosreport-overcloud-controller-1/ /data/sosreport-overcloud-controller-2/`
 
 <a id="markdown-running-a-check" name="running-a-check"></a>
+
 ### Running a check
 
 This is an example of execution of Magui against a set of sosreports with `seqno` plugin of Citellus enabled.
@@ -169,6 +171,7 @@ On this example, UUID and SEQNO is shown for each controller.
 ```
 
 <a id="markdown-running-a-check-against-remote-hosts" name="running-a-check-against-remote-hosts"></a>
+
 #### Running a check against remote hosts
 
 ```sh
@@ -181,6 +184,7 @@ echo "host2" >> hostsfile
 ```
 
 <a id="markdown-autogrouping" name="autogrouping"></a>
+
 #### Autogrouping
 
 <a href="https://asciinema.org/a/170429"><img src="https://asciinema.org/a/170429.png" width="100%" border=0  alt='Autogrouping dmeo'></a>
@@ -188,6 +192,7 @@ echo "host2" >> hostsfile
 Magui does check `metadata` for finding host roles or hostnames that should be checked together and generates additional json files for them.
 
 <a id="markdown-plugin-development-for-magui" name="plugin-development-for-magui"></a>
+
 # Plugin development for Magui
 
 Please do check <doc/magui-plugin-development.md> for more details.

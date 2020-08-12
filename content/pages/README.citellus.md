@@ -25,8 +25,8 @@ description:
 
 <!-- /TOC -->
 
-
 <a id="markdown-introduction" name="introduction"></a>
+
 ## Introduction
 
 Citellus is a program that should help with system configuration validation on either live system or any sort of snapshot of the filesystem.
@@ -35,8 +35,8 @@ Via execution of 'plugins' it reports status on each one execution against the s
 
 Please if you have any idea on any improvements please do not hesitate to open an issue.
 
-
 <a id="markdown-highlights" name="highlights"></a>
+
 ## Highlights
 
 - Plugins written in your language of choice.
@@ -50,8 +50,8 @@ Check latest changes on [Changelog.md]({filename}Changelog.md)
 
 Check for plugins listing on [citellusclient/plugins/](citellusclient/plugins/)
 
-
 <a id="markdown-installation" name="installation"></a>
+
 ## Installation
 
 - Just clone the git repository and execute it from there 'or'
@@ -82,8 +82,8 @@ Check for plugins listing on [citellusclient/plugins/](citellusclient/plugins/)
     - Docker passes as volume the path specified under /data so we do use that parameter with citellus for running the tests.
     - The default user id within the container is 10001 and the commands or sosreport permissions doesn't allow that user to gather all the information, so the container is required to run as the current user.
 
-
 <a id="markdown-usage-help" name="usage-help"></a>
+
 ## Usage help
 
 We are developing framework in python, the bash framework has been deprecated. Python framework is the only supported framework.
@@ -154,8 +154,8 @@ Config options:
 Check how does it look in an execution at:
 <a href="https://asciinema.org/a/169814"><img src="https://asciinema.org/a/169814.png" width="100%" border=0  alt='Citellus demo'></a>
 
-
 <a id="markdown-plugins-and-their-descriptions" name="plugins-and-their-descriptions"></a>
+
 ## Plugins and their descriptions
 
 This is new feature of citellus that will show you available scripts and their description.
@@ -172,8 +172,8 @@ This is new feature of citellus that will show you available scripts and their d
 {'backend': 'core', 'description': 'Checks python-ryu tracebacks', 'plugin': '/home/iranzo/DEVEL/citellus/citellusclient/plugins/core/bugzilla/openstack/neutron/1450223.sh'}
 ```
 
-
 <a id="markdown-doing-a-live-check-example" name="doing-a-live-check-example"></a>
+
 ## Doing a live check example
 
 This is an example of execution of Citellus using all openstack and pacemaker tests collections.
@@ -203,8 +203,8 @@ INFO:citellus:using default plugin path
     metering_time_to_live = -1
 ```
 
-
 <a id="markdown-doing-a-fs-snapshot-check-example" name="doing-a-fs-snapshot-check-example"></a>
+
 ## Doing a fs snapshot check example
 
 This is an example of execution of Citellus using `pacemaker` and `openstack` filter against fs snapshot.
@@ -234,8 +234,8 @@ INFO:citellus:using default plugin path
     metering_time_to_live = -1
 ```
 
-
 <a id="markdown-html-interface" name="html-interface"></a>
+
 ## HTML Interface
 
 - Create by using `--output $FOLDER` and `--web`, open the generated `citellus.html`.
@@ -250,8 +250,8 @@ INFO:citellus:using default plugin path
 http://host/citellus.html?json=magui.json
 ```
 
-
 <a id="markdown-ansible-playbooks" name="ansible-playbooks"></a>
+
 ## Ansible playbooks
 
 Citellus can also run Ansible playbooks via extension
