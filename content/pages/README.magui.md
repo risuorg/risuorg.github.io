@@ -26,7 +26,7 @@ description:
 <a id="markdown-introduction" name="introduction"></a>
 ## Introduction
 
-Magui is a wrapper that calls functions from the Python library of Citellus [README.citellus.md]({filename}README.md).
+Magui is a wrapper that calls functions from the Python library of Citellus [README]({filename}README.citellus.md).
 
 Some problems are not detected only on one node, but are made by the aggregation of data across them, for example:
 
