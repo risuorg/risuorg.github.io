@@ -22,7 +22,7 @@ git module elegant:
     url: https://github.com/Pelican-Elegant/elegant.git
 
 git module pelican-blueidea:
-    url: https://github.com/nasskach/pelican-blueidea.git
+    url: https://github.com/citellusorg/pelican-blueidea.git
 
 git module revealmd:
     url: https://github.com/iranzo/pelican-revealmd/
