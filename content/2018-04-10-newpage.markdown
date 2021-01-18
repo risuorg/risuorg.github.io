@@ -10,6 +10,6 @@ description:
 
 ## New home!
 
-We've just created this page for hosting the project at <http://citellus.org>
+We've just created this page for hosting the project at <http://citellusorg.github.io>
 
 Thanks for visiting!

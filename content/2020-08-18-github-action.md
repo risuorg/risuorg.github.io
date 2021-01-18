@@ -30,7 +30,7 @@ We've moved some of the CI in the repository from Travis to GHA to take advantag
 - Broken link checker for documents
 - Labeling of issues
 - Closing old issues/PR's when not updated
-- Generation of website for <https://citellus.org>
+- Generation of website for <https://citellusorg.github.io>
 - Managing of dependencies for actions, packages
 - etc
 

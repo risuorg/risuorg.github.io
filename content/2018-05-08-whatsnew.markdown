@@ -22,7 +22,7 @@ Some of the changes include...
 
 ### General
 
-- New domain: <https://citellus.org> and new URL for repos <https://github.com/citellusorg/>
+- New domain: <https://citellusorg.github.io> and new URL for repos <https://github.com/citellusorg/>
 - Updated presentation files
   - SuperSec 2018
   - General one

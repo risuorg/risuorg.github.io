@@ -1,6 +1,6 @@
 ## README
 
-If you want to contribute to citellus.org with a blog entry, please do create a new PR to this repo (on the `source` branch) , which contains a new file (markdown) in the contents/ folder.
+If you want to contribute to citellusorg.github.io with a blog entry, please do create a new PR to this repo (on the `source` branch) , which contains a new file (markdown) in the contents/ folder.
 
 Use one of the prior files as a template and ensure to use DATE-title.md as filename and update the relevant tags inside the file, such as:
 
