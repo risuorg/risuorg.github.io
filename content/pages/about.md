@@ -15,15 +15,15 @@ save_as: index.html
 
 <!-- TOC depthFrom:1 insertAnchor:true orderedList:true -->
 
-1. [What is Citellus?](#what-is-citellus)
-2. [What's new?](#whats-new)
-3. [Who are we?](#who-are-we)
-4. [Quick glance:](#quick-glance)
-5. [Code status](#code-status)
-   1. [[Citellus](https://github.com/citellusorg/citellus)](#citellushttpsgithubcomcitellusorgcitellus)
-   2. [[Nexus](https://github.com/citellusorg/nexus)](#nexushttpsgithubcomcitellusorgnexus)
-   3. [[Citmetrics](https://github.com/citellusorg/citmetrics)](#citmetricshttpsgithubcomcitellusorgcitmetrics)
-6. [Get it!](#get-it)
+- [What is Citellus?](#what-is-citellus)
+- [What's new?](#whats-new)
+- [Who are we?](#who-are-we)
+- [Quick glance:](#quick-glance)
+- [Code status](#code-status)
+  - [Citellus](#citellus)
+  - [Nexus](#nexus)
+  - [Citmetrics](#citmetrics)
+- [Get it!](#get-it)
 
 <!-- /TOC -->
 
@@ -65,24 +65,25 @@ We're a group of technology enthusiasts working in different areas ranging from 
 
 ### Code status
 
-<a id="markdown-citellushttpsgithubcomcitellusorgcitellus" name="citellushttpsgithubcomcitellusorgcitellus"></a>
+<a id="markdown-citellus" name="citellus"></a>
 
-#### [Citellus](https://github.com/citellusorg/citellus)
+#### Citellus
 
 [![License](https://img.shields.io/github/license/citellusorg/citellus.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/citellusorg/citellus.svg?branch=master)](https://travis-ci.org/citellusorg/citellus)
 [![PyPI version](https://badge.fury.io/py/citellus.svg)](https://badge.fury.io/py/citellus)
 [![](https://images.microbadger.com/badges/image/citellus/citellus.svg)](https://microbadger.com/images/citellus/citellus "Get your own image badge on microbadger.com")
-<a id="markdown-nexushttpsgithubcomcitellusorgnexus" name="nexushttpsgithubcomcitellusorgnexus"></a>
 
-#### [Nexus](https://github.com/citellusorg/nexus)
+<a id="markdown-nexus" name="nexus"></a>
+
+#### Nexus
 
 [![License](https://img.shields.io/github/license/citellusorg/nexus.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/citellusorg/nexus.svg?branch=master)](https://travis-ci.org/citellusorg/nexus)
 
-<a id="markdown-citmetricshttpsgithubcomcitellusorgcitmetrics" name="citmetricshttpsgithubcomcitellusorgcitmetrics"></a>
+<a id="markdown-citmetrics" name="citmetrics"></a>
 
-#### [Citmetrics](https://github.com/citellusorg/citmetrics)
+#### Citmetrics
 
 [![License](https://img.shields.io/github/license/citellusorg/citmetrics.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/citellusorg/citmetrics.svg?branch=master)](https://travis-ci.org/citellusorg/citmetrics)
