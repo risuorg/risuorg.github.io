@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Risu: What's new? 2018-07-02"
+date: 2018-07-02 18:25:38 +0200
+comments: true
+tags: [Risu, magui, whatsnew]
+category: blog
+description:
+author: Pablo Iranzo Gómez
+---
+
+## What's new?
+
+Other posts in this category: [What's new]({tag}whatsnew)
+
+### General
+
+- RC_INFO
+  - We had discussions in the past about info that we could provide that was not really a `Error`. After some extra feedback we did add the RC_INFO exit code to the tests, so that for example `xsos` output is also provided with Risu results so that it can be quickly checked also from the Web UI
+- `overrides.json`
+  - Allows to override fields in the results json with some values, for example to force updates of the titles, urls, etc in the results returned.
+- `--anon`
+  - Allows to anonymize results by removing contents of `err` and `out` fields in `Risu.json` so that it doesn't leak any information.
+- `rhv-log-collector-analyzer-live` support.
+  - Risu now does report on `live` executions the information reported from `rhv-log-collector-analizer-live --json` thanks to the great work done by Douglas Landgraf.
+- Since commit [`9505c0cca15c5d55cdf5dbd7b5a1e271f03f7234`](https://github.com/Risuorg/Risu/commit/9505c0cca15c5d55cdf5dbd7b5a1e271f03f7234) we've removed plugins that were previously made available as we were requested.

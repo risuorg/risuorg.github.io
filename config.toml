@@ -1,0 +1,67 @@
+baseURL= "https://risuorg.github.io"
+title = "RISU"
+theme = "mainroad"
+languageCode = "en-us"
+paginate = "10" # Number of posts per page
+disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
+googleAnalytics = "UA-81705-14" # Enable Google Analytics by entering your tracking id
+menu = "main"
+
+[Author] # Used in authorbox
+  name = "RISU team"
+  bio = "Risu team works on getting an easy to extend framework for reporting issues at your systems"
+  avatar = "images/risu.png"
+
+
+[Params]
+  subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
+  description = "Webpage for the RISU project" # Site description. Used in meta description
+  copyright = "RISUorg team" # Footer copyright holder, otherwise will use site title
+  opengraph = true # Enable OpenGraph if true
+  schema = true # Enable Schema
+  twitter_cards = true # Enable Twitter Cards if true
+  readmore = false # Show "Read more" button in list if true
+  authorbox = true # Show authorbox at bottom of pages if true
+  toc = true # Enable Table of Contents
+  pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
+  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
+  mainSections = ["content", "post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "2006-01-02" # Change the format of dates
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
+  highlightColor = "" # Deprecated in favor of .Site.Params.style.vars.highlightColor
+  customCSS = ["css/custom.css"] # Include custom CSS files
+  customJS = ["js/custom.js"] # Include custom JS files
+
+[Params.style.vars]
+  highlightColor = "#e22d30" # Override highlight color
+
+  # Override font-family sets. Secondary font-family set responsible for pre, code, kbd, and samp tags font
+  # Take care of different quotes OR escaping symbols in these params if necessary
+  fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
+  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+
+[Params.logo]
+  image = "images/risu.png" # Logo image. Path relative to "static"
+  title = "RISU" # Logo title, otherwise will use site title
+  subtitle = "Find and Report Issues" # Logo subtitle
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  # alternatively "ddg-search" can be used, to search via DuckDuckGo
+  # widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  categories_counter = false # Enable counter for each category in "Categories" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  github = "citellusorg"

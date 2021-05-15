@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Risu: What's new? 2018-07-08"
+date: 2018-07-08 18:25:38 +0200
+comments: true
+tags: [Risu, magui, whatsnew]
+category: blog
+description:
+author: Pablo Iranzo Gómez
+---
+
+## What's new?
+
+Other posts in this category: [What's new]({tag}whatsnew)
+
+### General
+
+- anonymizaton
+  - We've moved this to an independent function and updated the '--call-home <serveruri>' to use this function (but leaving sosreport path), so that the results can be aggregated later for checking trends on rules detecting issues, etc.
+- metrics
+  - As part of above change, we've started a small spinoff that we want to integrate back into Nexus on grabbing metrics of execution we can later analyze. Code is very simple and it's just a simple receiving HTTP POST server that stores the `json` on disk for later analysis. Note: Metrics are enabled on demand by setting the `--call-home` parameter to YOUR server uri.

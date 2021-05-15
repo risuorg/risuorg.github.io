@@ -1,12 +1,7 @@
 output/
-.peru/
-plugins/
-themes/
 .sync/
 .idea/
-pelican.pid
 srv.pid
-output
 **.pyc
 *.pyc
 .tox/
