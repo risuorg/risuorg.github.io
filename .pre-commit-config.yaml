@@ -8,6 +8,7 @@ repos:
     hooks:
     -   id: prettier
         files: \.(css|js|md|markdown|json)
+        exclude: themes
 -   repo: https://github.com/python/black
     rev: 19.10b0
     hooks:
@@ -28,6 +29,7 @@ repos:
         args:
         - --unsafe
     -   id: end-of-file-fixer
+        exclude: themes
     -   id: fix-encoding-pragma
     -   id: forbid-new-submodules
     -   id: no-commit-to-branch
@@ -37,6 +39,7 @@ repos:
     -   id: requirements-txt-fixer
     -   id: sort-simple-yaml
     -   id: trailing-whitespace
+        exclude: themes
 -   repo: https://gitlab.com/pycqa/flake8
     rev: 3.8.3
     hooks:
