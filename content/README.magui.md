@@ -51,7 +51,7 @@ Magui aims to use Risu for gathering the data and later, write plugins to analyz
 
 - Autogrouping: based on metadata plugin, runs comparisons against sets of host roles, hostnames, etc for better spotting issues across systems.
 
-- Web interface using `Risu.html?json=magui.json`
+- Web interface using `risu.html?json=magui.json`
 
 Check latest changes on <Changelog.md>
 

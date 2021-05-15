@@ -140,7 +140,7 @@ Several changes introduced recently:
   - [David Valee Delisle](https://valleedelisle.com/) did a great job on preparing an html that loads Risu.json and shows it graphically.
   - Thanks to his work, we did extended some other features like priority, categories, etc that are calculated via Risu and consumed via Risu-www.
   - Interface can also load `magui.json` (with `?json=magui.json`) and show it's output.
-  - We did extend Risu to take `--web` to automatically create the json named `Risu.json` on the folder specified with `-o` and copy the `Risu.html` file there. So if you provide sosreports over http, you can point to Risu.html to see graphical status! (check latest image at Risu website as [www.png](https://github.com/Risuorg/Risu/raw/master/doc/images/www.png) )
+  - We did extend Risu to take `--web` to automatically create the json named `Risu.json` on the folder specified with `-o` and copy the `risu.html` file there. So if you provide sosreports over http, you can point to risu.html to see graphical status! (check latest image at Risu website as [www.png](https://github.com/Risuorg/Risu/raw/master/doc/images/www.png) )
 - Increased plugin count!
   - Now we do have more than 119 across different categories
   - A new plugin in python `reboot.py` that checks for unexpected reboots

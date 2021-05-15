@@ -43,7 +43,7 @@ Please if you have any idea on any improvements please do not hesitate to open a
 - Plugins written in your language of choice.
 - Allows to dump output to json file to be processed by other tools.
   - Allow to visualize html from json output.
-  - Check our sample at: [Risu-www](/Risu.html)
+  - Check our sample at: [Risu-www](/risu.html)
 - Ansible playbook support.
 - Save / restore default settings
 
@@ -239,16 +239,16 @@ INFO:Risu:using default plugin path
 
 ## HTML Interface
 
-- Create by using `--output $FOLDER` and `--web`, open the generated `Risu.html`.
+- Create by using `--output $FOLDER` and `--web`, open the generated `risu.html`.
 
 <img src="../images/www.png" height="40%" border=0 alt='WWW interface capture'>
 
 - Risu-web now supports the parsing of magui.json.
 
-- It's possible to tell the Risu.html which json to parse by adding json=<jsonfile> as a query string:
+- It's possible to tell the risu.html which json to parse by adding json=<jsonfile> as a query string:
 
 ```
-http://host/Risu.html?json=magui.json
+http://host/risu.html?json=magui.json
 ```
 
 <a id="markdown-ansible-playbooks" name="ansible-playbooks"></a>
