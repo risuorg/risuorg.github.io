@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Citellus: What's new? 2018-07-08
+title: Risu: What's new? 2018-07-08
 date: 2018-07-08 18:25:38 +0200
 comments: true
-tags: citellus, magui, whatsnew
+tags: Risu, magui, whatsnew
 category: blog
 description:
 author: Pablo Iranzo Gómez

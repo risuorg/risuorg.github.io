@@ -3,13 +3,13 @@ layout: post
 title: New home!
 date: 2018-04-10 14:00:00 +0200
 comments: true
-tags: citellus
+tags: Risu
 category: blog
 description:
 ---
 
 ## New home!
 
-We've just created this page for hosting the project at <http://citellusorg.github.io>
+We've just created this page for hosting the project at <http://Risuorg.github.io>
 
 Thanks for visiting!

@@ -27,7 +27,7 @@ description:
 
 ## Introduction
 
-Magui is a wrapper that calls functions from the Python library of Citellus [README]({filename}README.citellus.md).
+Magui is a wrapper that calls functions from the Python library of Risu [README]({filename}README.Risu.md).
 
 Some problems are not detected only on one node, but are made by the aggregation of data across them, for example:
 
@@ -36,13 +36,13 @@ Some problems are not detected only on one node, but are made by the aggregation
 - etc
 - RHEL release differences
 
-Magui aims to use Citellus for gathering the data and later, write plugins to analyze that information.
+Magui aims to use Risu for gathering the data and later, write plugins to analyze that information.
 
 <a id="markdown-highlights" name="highlights"></a>
 
 ## Highlights
 
-- Reuse saved citellus.json to speed up analisys on several files, retrigger if inconsistencies
+- Reuse saved Risu.json to speed up analisys on several files, retrigger if inconsistencies
 
 - Plugins use uuid to identify plugin properly and act on them.
 
@@ -50,7 +50,7 @@ Magui aims to use Citellus for gathering the data and later, write plugins to an
 
 - Autogrouping: based on metadata plugin, runs comparisons against sets of host roles, hostnames, etc for better spotting issues across systems.
 
-- Web interface using `citellus.html?json=magui.json`
+- Web interface using `Risu.html?json=magui.json`
 
 Check latest changes on <Changelog.md>
 
@@ -59,31 +59,31 @@ Check latest changes on <Changelog.md>
 ## Installation
 
 - Just clone the git repository and execute it from there 'or'
-- use 'pipsi' or create a python virtual env to install package 'citellus'
+- use 'pipsi' or create a python virtual env to install package 'Risu'
   ```sh
-  # pipsi install citellus
+  # pipsi install Risu
   Already using interpreter /usr/bin/python3
   Using base prefix '/usr'
-  New python executable in /home/iranzo/.local/venvs/citellus/bin/python3
-  Also creating executable in /home/iranzo/.local/venvs/citellus/bin/python
+  New python executable in /home/iranzo/.local/venvs/Risu/bin/python3
+  Also creating executable in /home/iranzo/.local/venvs/Risu/bin/python
   Installing setuptools, pip, wheel...done.
-  Collecting citellus
-  Installing collected packages: citellus
-  Successfully installed citellus-0.1.0.dev1072
-    Linked script /home/iranzo/.local/bin/citellus.py
+  Collecting Risu
+  Installing collected packages: Risu
+  Successfully installed Risu-0.1.0.dev1072
+    Linked script /home/iranzo/.local/bin/Risu.py
     Linked script /home/iranzo/.local/bin/magui.py
   Done.
   ```
-  - Pipsi will take care of installing a virtual environment and link to binary folder so you can call citellus.py or magui.py directly
+  - Pipsi will take care of installing a virtual environment and link to binary folder so you can call Risu.py or magui.py directly
   - Remember that pypi package might not contain all the latests plugins features as the github repo one.
 - Container:
   - Use our automatically built container in docker hub:
-    - `docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z citellus/citellus:latest /data --entrypoint="magui.py"`
+    - `docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z Risu/Risu:latest /data --entrypoint="magui.py"`
   - or build your own using the included `Dockerfile` in the git checkout.
-    - `docker build . -f Dockerfile.centos7-atomic -t citellus:latest` # (from git checkout, then note image id)
-    - `docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z citellus:latest /data --entrypoint="magui.py"`
+    - `docker build . -f Dockerfile.centos7-atomic -t Risu:latest` # (from git checkout, then note image id)
+    - `docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z Risu:latest /data --entrypoint="magui.py"`
   - Notes about using docker:
-    - Docker passes as volume the path specified under /data so we do use that parameter with citellus for running the tests.
+    - Docker passes as volume the path specified under /data so we do use that parameter with Risu for running the tests.
     - The default user id within the container is 10001 and the commands or sosreport permissions doesn't allow that user to gather all the information, so the container is required to run as the current user.
 
 <a id="markdown-usage-help" name="usage-help"></a>
@@ -116,8 +116,8 @@ optional arguments:
                         Set path for Magui plugin location if not default
   --output FILENAME, -o FILENAME
                         Write results to JSON file FILENAME
-  --run, -r             Force run of citellus instead of reading existing
-                        'citellus.json'
+  --run, -r             Force run of Risu instead of reading existing
+                        'Risu.json'
   --hosts hosts         Gather data via ansible from remote hosts to process.
 
 Filtering options:
@@ -135,7 +135,7 @@ Filtering options:
 
 ```
 
-Magui can be executed using the citellus docker image as well, by modifying
+Magui can be executed using the Risu docker image as well, by modifying
 the entrypoint:
 
 In a directory structure as:
@@ -147,17 +147,17 @@ In a directory structure as:
 └── sosreport-overcloud-controller-2
 ```
 
-`docker run --user=$(id -u) --rm --entrypoint="magui.py" -v /path/to/my/sosreports/:/data:Z citellus:latest -q /data/sosreport-overcloud-controller-0/ /data/sosreport-overcloud-controller-1/ /data/sosreport-overcloud-controller-2/`
+`docker run --user=$(id -u) --rm --entrypoint="magui.py" -v /path/to/my/sosreports/:/data:Z Risu:latest -q /data/sosreport-overcloud-controller-0/ /data/sosreport-overcloud-controller-1/ /data/sosreport-overcloud-controller-2/`
 
 <a id="markdown-running-a-check" name="running-a-check"></a>
 
 ### Running a check
 
-This is an example of execution of Magui against a set of sosreports with `seqno` plugin of Citellus enabled.
+This is an example of execution of Magui against a set of sosreports with `seqno` plugin of Risu enabled.
 
 ```sh
 #magui.py * -i seqno # (filtering for ‘seqno’ plugins.
-{'/home/remote/piranzo/citellus/citellus/plugins/openstack/mysql/seqno.sh': {'ctrl0.localdomain': {'err': '08a94e67-bae0-11e6-8239-9a6188749d23:36117633\n',
+{'/home/remote/piranzo/Risu/Risu/plugins/openstack/mysql/seqno.sh': {'ctrl0.localdomain': {'err': '08a94e67-bae0-11e6-8239-9a6188749d23:36117633\n',
                                                                                                    'out': '',
                                                                                                    'rc': 0},
                                                                              'ctrl1.localdomain': {'err': '08a94e67-bae0-11e6-8239-9a6188749d23:36117633\n',

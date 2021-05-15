@@ -1,5 +1,5 @@
 ---
-title: Citellus
+title: Risu
 layout: post
 date: 2016-06-02 17:27:47 +0200
 comments: true
@@ -7,7 +7,7 @@ tags:
 description:
 ---
 
-<img src="../images/citellus-mini.png" width="20%" border=0 align="right" alt='Citellus logo'>
+<img src="../images/Risu-mini.png" width="20%" border=0 align="right" alt='Risu logo'>
 
 **Table of contents**
 
@@ -29,7 +29,7 @@ description:
 
 ## Introduction
 
-Citellus is a program that should help with system configuration validation on either live system or any sort of snapshot of the filesystem.
+Risu is a program that should help with system configuration validation on either live system or any sort of snapshot of the filesystem.
 
 Via execution of 'plugins' it reports status on each one execution against the system that gives you an idea on health status, actual problems or problems that will reveal themselves if no preventive action is taken.
 
@@ -42,44 +42,44 @@ Please if you have any idea on any improvements please do not hesitate to open a
 - Plugins written in your language of choice.
 - Allows to dump output to json file to be processed by other tools.
   - Allow to visualize html from json output.
-  - Check our sample at: [Citellus-www](/citellus.html)
+  - Check our sample at: [Risu-www](/Risu.html)
 - Ansible playbook support.
 - Save / restore default settings
 
 Check latest changes on [Changelog.md]({filename}Changelog.md)
 
-Check for plugins listing on [citellusclient/plugins/](citellusclient/plugins/)
+Check for plugins listing on [Risuclient/plugins/](Risuclient/plugins/)
 
 <a id="markdown-installation" name="installation"></a>
 
 ## Installation
 
 - Just clone the git repository and execute it from there 'or'
-- use 'pipsi' or create a python virtual env to install package 'citellus'
+- use 'pipsi' or create a python virtual env to install package 'Risu'
   ```sh
-  # pipsi install citellus
+  # pipsi install Risu
   Already using interpreter /usr/bin/python3
   Using base prefix '/usr'
-  New python executable in /home/iranzo/.local/venvs/citellus/bin/python3
-  Also creating executable in /home/iranzo/.local/venvs/citellus/bin/python
+  New python executable in /home/iranzo/.local/venvs/Risu/bin/python3
+  Also creating executable in /home/iranzo/.local/venvs/Risu/bin/python
   Installing setuptools, pip, wheel...done.
-  Collecting citellus
-  Installing collected packages: citellus
-  Successfully installed citellus-0.1.0.dev1072
-    Linked script /home/iranzo/.local/bin/citellus.py
+  Collecting Risu
+  Installing collected packages: Risu
+  Successfully installed Risu-0.1.0.dev1072
+    Linked script /home/iranzo/.local/bin/Risu.py
     Linked script /home/iranzo/.local/bin/magui.py
   Done.
   ```
-  - Pipsi will take care of installing a virtual environment and link to binary folder so you can call citellus.py or magui.py directly
+  - Pipsi will take care of installing a virtual environment and link to binary folder so you can call Risu.py or magui.py directly
   - Remember that pypi package might not contain all the latests plugins features as the github repo one.
 - Container:
   - Use our automatically built container in docker hub:
-    - `docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z citellus/citellus:latest /data`
+    - `docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z Risu/Risu:latest /data`
   - or build your own using the included `Dockerfile` in the git checkout.
-    - `docker build . -f Dockerfile.centos7-atomic -t citellus:latest` # (from git checkout, then note image id)
-    - `docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z citellus:latest /data`
+    - `docker build . -f Dockerfile.centos7-atomic -t Risu:latest` # (from git checkout, then note image id)
+    - `docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z Risu:latest /data`
   - Notes about using docker:
-    - Docker passes as volume the path specified under /data so we do use that parameter with citellus for running the tests.
+    - Docker passes as volume the path specified under /data so we do use that parameter with Risu for running the tests.
     - The default user id within the container is 10001 and the commands or sosreport permissions doesn't allow that user to gather all the information, so the container is required to run as the current user.
 
 <a id="markdown-usage-help" name="usage-help"></a>
@@ -89,7 +89,7 @@ Check for plugins listing on [citellusclient/plugins/](citellusclient/plugins/)
 We are developing framework in python, the bash framework has been deprecated. Python framework is the only supported framework.
 
 ```
-usage: citellus.py [arguments] [-h] [-l] [--list-plugins] [--list-extensions]
+usage: Risu.py [arguments] [-h] [-l] [--list-plugins] [--list-extensions]
                                [--list-categories] [--description]
                                [--list-hooks] [--output FILENAME] [--web]
                                [--run] [--find] [--blame] [--lang]
@@ -99,7 +99,7 @@ usage: citellus.py [arguments] [-h] [-l] [--list-plugins] [--list-extensions]
                                [-hf SUBSTRING] [--dump-config] [--no-config]
                                [sosreport]
 
-Citellus allows to analyze a directory against common set of tests, useful for
+Risu allows to analyze a directory against common set of tests, useful for
 finding common configuration errors
 
 positional arguments:
@@ -116,12 +116,12 @@ optional arguments:
   --list-hooks          Print a list of discovered hooks and exit
   --output FILENAME, -o FILENAME
                         Write results to JSON file FILENAME
-  --web                 Write results to JSON file citellus.json and copy html
+  --web                 Write results to JSON file Risu.json and copy html
                         interface in path defined in --output
-  --run, -r             Force run of citellus instead of reading existing
-                        'citellus.json'
+  --run, -r             Force run of Risu instead of reading existing
+                        'Risu.json'
   --find                Use provided path at starting point for finding
-                        citellus.json and print them based on filters defined
+                        Risu.json and print them based on filters defined
 
 Output and logging options:
   --blame               Report time spent on each plugin
@@ -146,55 +146,55 @@ Filtering options:
 Config options:
   --dump-config         Dump config to console to be saved into file
   --no-config           Do not read configuration from file /home/iranzo/DEVEL
-                        /citellus/citellusclient/citellus.conf or
-                        ~/.citellus.conf
+                        /Risu/Risuclient/Risu.conf or
+                        ~/.Risu.conf
 
 ```
 
 Check how does it look in an execution at:
-<a href="https://asciinema.org/a/169814"><img src="https://asciinema.org/a/169814.png" width="100%" border=0  alt='Citellus demo'></a>
+<a href="https://asciinema.org/a/169814"><img src="https://asciinema.org/a/169814.png" width="100%" border=0  alt='Risu demo'></a>
 
 <a id="markdown-plugins-and-their-descriptions" name="plugins-and-their-descriptions"></a>
 
 ## Plugins and their descriptions
 
-This is new feature of citellus that will show you available scripts and their description.
+This is new feature of Risu that will show you available scripts and their description.
 
 ```
-./citellus.py --list-plugins --description
-{'backend': 'core', 'description': 'This plugin checks if Apache reaches its MaxRequestWorkers', 'plugin': '/home/iranzo/DEVEL/citellus/citellusclient/plugins/core/bugzilla/httpd/1406417.sh'}
-{'backend': 'core', 'description': 'Checks missconfigured host in nova vs hostname', 'plugin': '/home/iranzo/DEVEL/citellus/citellusclient/plugins/core/bugzilla/openstack/ceilometer/1483456.sh'}
-{'backend': 'core', 'description': 'Checks for outdated ceph packages', 'plugin': '/home/iranzo/DEVEL/citellus/citellusclient/plugins/core/bugzilla/openstack/ceph/1358697.sh'}
-{'backend': 'core', 'description': 'Checks httpd WSGIApplication defined to avoid wrong redirection', 'plugin': '/home/iranzo/DEVEL/citellus/citellusclient/plugins/core/bugzilla/openstack/httpd/1478042.sh'}
-{'backend': 'core', 'description': 'Checks for keystone transaction errors on cleanup', 'plugin': '/home/iranzo/DEVEL/citellus/citellusclient/plugins/core/bugzilla/openstack/keystone/1473713.sh'}
-{'backend': 'core', 'description': 'Checks for keystone LDAP domain template problem', 'plugin': '/home/iranzo/DEVEL/citellus/citellusclient/plugins/core/bugzilla/openstack/keystone/templates/1519057.sh'}
-{'backend': 'core', 'description': 'Checks for wrong auth_url configuration in metadata_agent.ini', 'plugin': '/home/iranzo/DEVEL/citellus/citellusclient/plugins/core/bugzilla/openstack/neutron/1340001.sh'}
-{'backend': 'core', 'description': 'Checks python-ryu tracebacks', 'plugin': '/home/iranzo/DEVEL/citellus/citellusclient/plugins/core/bugzilla/openstack/neutron/1450223.sh'}
+./Risu.py --list-plugins --description
+{'backend': 'core', 'description': 'This plugin checks if Apache reaches its MaxRequestWorkers', 'plugin': '/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/httpd/1406417.sh'}
+{'backend': 'core', 'description': 'Checks missconfigured host in nova vs hostname', 'plugin': '/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/ceilometer/1483456.sh'}
+{'backend': 'core', 'description': 'Checks for outdated ceph packages', 'plugin': '/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/ceph/1358697.sh'}
+{'backend': 'core', 'description': 'Checks httpd WSGIApplication defined to avoid wrong redirection', 'plugin': '/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/httpd/1478042.sh'}
+{'backend': 'core', 'description': 'Checks for keystone transaction errors on cleanup', 'plugin': '/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/keystone/1473713.sh'}
+{'backend': 'core', 'description': 'Checks for keystone LDAP domain template problem', 'plugin': '/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/keystone/templates/1519057.sh'}
+{'backend': 'core', 'description': 'Checks for wrong auth_url configuration in metadata_agent.ini', 'plugin': '/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron/1340001.sh'}
+{'backend': 'core', 'description': 'Checks python-ryu tracebacks', 'plugin': '/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron/1450223.sh'}
 ```
 
 <a id="markdown-doing-a-live-check-example" name="doing-a-live-check-example"></a>
 
 ## Doing a live check example
 
-This is an example of execution of Citellus using all openstack and pacemaker tests collections.
+This is an example of execution of Risu using all openstack and pacemaker tests collections.
 
 ```
-./citellus.py -q -l -i pacemaker -i openstack
-INFO:citellus:using default plugin path
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/ceilometer_bug_1483456.sh: failed
+./Risu.py -q -l -i pacemaker -i openstack
+INFO:Risu:using default plugin path
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/ceilometer_bug_1483456.sh: failed
     https://bugzilla.redhat.com/show_bug.cgi?id=1483456
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/ceph_bug_1358697.sh: failed
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/ceph_bug_1358697.sh: failed
     outdated ceph packages: https://bugzilla.redhat.com/show_bug.cgi?id=1358697
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/httpd_bug_1478042.sh: skipped
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/keystone_bug_1473713.sh: okay
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/neutron_bug_1450223.sh: skipped
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/neutron_bug_1474092.sh: okay
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/neutron_bug_1489066.sh: okay
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/nova_bug_1474092.sh: okay
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/swift_bug_1500607.sh: failed
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/httpd_bug_1478042.sh: skipped
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/keystone_bug_1473713.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron_bug_1450223.sh: skipped
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron_bug_1474092.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron_bug_1489066.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/nova_bug_1474092.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/swift_bug_1500607.sh: failed
     swift expirer https://bugzilla.redhat.com/show_bug.cgi?id=1500607
-# /root/citellus/citellusclient/plugins/core/launchpad/openstack/keystone_bug_1649616.sh: okay
-# /root/citellus/citellusclient/plugins/core/openstack/ceilometer/expiration.sh: failed
+# /root/Risu/Risuclient/plugins/core/launchpad/openstack/keystone_bug_1649616.sh: okay
+# /root/Risu/Risuclient/plugins/core/openstack/ceilometer/expiration.sh: failed
     ceilometer.conf setting must be updated:
     alarm_history_time_to_live = -1
     ceilometer.conf setting must be updated:
@@ -207,25 +207,25 @@ INFO:citellus:using default plugin path
 
 ## Doing a fs snapshot check example
 
-This is an example of execution of Citellus using `pacemaker` and `openstack` filter against fs snapshot.
+This is an example of execution of Risu using `pacemaker` and `openstack` filter against fs snapshot.
 
 ```
-./citellus.py -q -i pacemaker -i openstack sosreport-undercloud-0.redhat.local-20171117212710/
-INFO:citellus:using default plugin path
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/ceilometer_bug_1483456.sh: failed
+./Risu.py -q -i pacemaker -i openstack sosreport-undercloud-0.redhat.local-20171117212710/
+INFO:Risu:using default plugin path
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/ceilometer_bug_1483456.sh: failed
     https://bugzilla.redhat.com/show_bug.cgi?id=1483456
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/ceph_bug_1358697.sh: failed
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/ceph_bug_1358697.sh: failed
     outdated ceph packages: https://bugzilla.redhat.com/show_bug.cgi?id=1358697
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/httpd_bug_1478042.sh: skipped
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/keystone_bug_1473713.sh: okay
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/neutron_bug_1450223.sh: skipped
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/neutron_bug_1474092.sh: okay
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/neutron_bug_1489066.sh: okay
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/nova_bug_1474092.sh: okay
-# /root/citellus/citellusclient/plugins/core/bugzilla/openstack/swift_bug_1500607.sh: failed
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/httpd_bug_1478042.sh: skipped
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/keystone_bug_1473713.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron_bug_1450223.sh: skipped
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron_bug_1474092.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron_bug_1489066.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/nova_bug_1474092.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/swift_bug_1500607.sh: failed
     swift expirer https://bugzilla.redhat.com/show_bug.cgi?id=1500607
-# /root/citellus/citellusclient/plugins/core/launchpad/openstack/keystone_bug_1649616.sh: okay
-# /root/citellus/citellusclient/plugins/core/openstack/ceilometer/expiration.sh: failed
+# /root/Risu/Risuclient/plugins/core/launchpad/openstack/keystone_bug_1649616.sh: okay
+# /root/Risu/Risuclient/plugins/core/openstack/ceilometer/expiration.sh: failed
     ceilometer.conf setting must be updated:
     alarm_history_time_to_live = -1
     ceilometer.conf setting must be updated:
@@ -238,23 +238,23 @@ INFO:citellus:using default plugin path
 
 ## HTML Interface
 
-- Create by using `--output $FOLDER` and `--web`, open the generated `citellus.html`.
+- Create by using `--output $FOLDER` and `--web`, open the generated `Risu.html`.
 
 <img src="../images/www.png" height="40%" border=0 alt='WWW interface capture'>
 
-- Citellus-web now supports the parsing of magui.json.
+- Risu-web now supports the parsing of magui.json.
 
-- It's possible to tell the citellus.html which json to parse by adding json=<jsonfile> as a query string:
+- It's possible to tell the Risu.html which json to parse by adding json=<jsonfile> as a query string:
 
 ```
-http://host/citellus.html?json=magui.json
+http://host/Risu.html?json=magui.json
 ```
 
 <a id="markdown-ansible-playbooks" name="ansible-playbooks"></a>
 
 ## Ansible playbooks
 
-Citellus can also run Ansible playbooks via extension
+Risu can also run Ansible playbooks via extension
 
 The are some additional conventions that are detailed in [ansible-playbooks.md](doc/ansible-playbooks.md) that determine how to code them to be executed in live or snapshoot mode.
 
@@ -266,7 +266,7 @@ All of them must end in `.yml`.
 found #1 extensions / found #0 tests at default path
 mode: fs snapshot .
 # Running extension ansible-playbook
-# /home/iranzo/DEVEL/citellus/citellus/playbooks/system/clock-ntpstat.yml: skipped
+# /home/iranzo/DEVEL/Risu/Risu/playbooks/system/clock-ntpstat.yml: skipped
     Skipped for incompatible operating mode
 ```
 
@@ -275,8 +275,8 @@ vs
 ```
 found #2 extensions with #2 plugins
 mode: live
-# /home/iranzo/DEVEL/citellus/citellusclient/plugins/ansible/openstack/rabbitmq/ha-policies.yml: okay
-# /home/iranzo/DEVEL/citellus/citellusclient/plugins/ansible/system/clock-ntpstat.yml: failed
+# /home/iranzo/DEVEL/Risu/Risuclient/plugins/ansible/openstack/rabbitmq/ha-policies.yml: okay
+# /home/iranzo/DEVEL/Risu/Risuclient/plugins/ansible/system/clock-ntpstat.yml: failed
     {"changed": false, "cmd": "ntpstat", "msg": "[Errno 2] No such file or directory",
 
 ```

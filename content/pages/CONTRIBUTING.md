@@ -3,7 +3,7 @@ title: Contributing
 layout: post
 date: 2016-06-02 17:27:47 +0200
 comments: true
-tags: citellus, contribute
+tags: Risu, contribute
 description:
 ---
 
@@ -23,7 +23,7 @@ description:
 # How to file a bug report
 
 If you have any suggestions for improvements please do not hesitate to
-open an [issue](https://github.com/citellusorg/citellus/issues/new).
+open an [issue](https://github.com/Risuorg/Risu/issues/new).
 
 <a id="markdown-how-to-contribute-code" name="how-to-contribute-code"></a>
 
@@ -35,9 +35,9 @@ like this:
 
 [gerrithub]: https://gerrithub.io/
 
-1.  Clone the citellus repository:
+1.  Clone the Risu repository:
 
-        git clone https://github.com/citellusorg/citellus.git
+        git clone https://github.com/Risuorg/Risu.git
 
 2.  Configure the `git-review` tool:
 
@@ -59,7 +59,7 @@ like this:
        # We're skipping tox -e py35 which is also invoked by default when tox is executed without arguments.
        ```
 
-    2. In this way, errors that might be relevant to the test environment can be skipped. For example this one reported at issue tracker as [104](https://github.com/citellusorg/citellus/issues/104))
+    2. In this way, errors that might be relevant to the test environment can be skipped. For example this one reported at issue tracker as [104](https://github.com/Risuorg/Risu/issues/104))
 
 5.  Update your local repository:
 
@@ -90,9 +90,9 @@ to request changes; when this happens:
 
         git-review
 
-You can see pending and already merged actual changes at: <https://review.gerrithub.io/#/q/project:citellusorg//citellus>
+You can see pending and already merged actual changes at: <https://review.gerrithub.io/#/q/project:Risuorg//Risu>
 
-4. Once the new plugin has been submitted you'll see some comments from 'Citellus Jenkins' which is running Unit tests against it (same ones that you run with `tox`)
+4. Once the new plugin has been submitted you'll see some comments from 'Risu Jenkins' which is running Unit tests against it (same ones that you run with `tox`)
 
 5. If Jenkins gives 'Verified +1', next step is wait for one reviewer to give final ACK and merge the change.
 
@@ -101,7 +101,7 @@ You can see pending and already merged actual changes at: <https://review.gerrit
 # How to write tests
 
 Please refer to the
-[templates](https://github.com/citellusorg/citellus/tree/master/doc/templates)
+[templates](https://github.com/Risuorg/Risu/tree/master/doc/templates)
 folder for examples.
 
 If you want to contribute also Unittests for your plugins, check [TESTING.md](TESTING.md)
@@ -112,9 +112,9 @@ For contributing translations check [i18n.md](doc/i18n.md)
 
 # How to debug your test
 
-We've included a file named `env-for.debug.sh` in the root folder of citellus repo that allows to be sourced and later execute your script.
+We've included a file named `env-for.debug.sh` in the root folder of Risu repo that allows to be sourced and later execute your script.
 
-This environment file will define the standard variables Citellus does use like:
+This environment file will define the standard variables Risu does use like:
 
 - RC_OKAY
 - RC_FAILED
@@ -130,7 +130,7 @@ And will preload the common-functions
 The way to use it is:
 
 ```sh
-. ~/citellus/env-for-debug.sh
+. ~/Risu/env-for-debug.sh
 ```
 
 Then you can debug your script with:

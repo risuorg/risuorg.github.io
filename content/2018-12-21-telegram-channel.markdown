@@ -3,14 +3,14 @@ layout: post
 title: Telegram channel
 date: 2018-12-21 13:59:58 +0200
 comments: true
-tags: citellus, magui, whatsnew
+tags: Risu, magui, whatsnew
 category: blog
 description:
 author: Pablo Iranzo Gómez
 ---
 
-Hey!, we've just started a telegram channel for Citellus users at <https://t.me/citellusUG> in addition to our FreeNode IRC channel #citellus.
+Hey!, we've just started a telegram channel for Risu users at <https://t.me/RisuUG> in addition to our FreeNode IRC channel #Risu.
 
 Stop by and share your feedback!
 
-The Citellus team.
+The Risu team.

@@ -7,7 +7,7 @@ import datetime
 # ---------------------------------------------------------------------
 
 AUTHOR = "Pablo Iranzo Gómez"
-SITENAME = "Citellus"
+SITENAME = "Risu"
 SITESUBTITLE = "Automate your troubleshooting"
 SITEURL = "/"
 DEFAULT_LANG = "en"
@@ -30,7 +30,7 @@ LINKS = ()
 # Keep 'name' like 'twitter' with what 'FontAwesome has for putting the right icon'
 
 SOCIAL = [
-    ("github", "https://github.com/citellusorg"),
+    ("github", "https://github.com/Risuorg"),
 ]
 
 
@@ -52,8 +52,8 @@ EXTRA_PATH_METADATA = {
     "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/CNAME": {"path": "CNAME"},
     "extra/README": {"path": "README.md"},
-    "extra/citellus.json": {"path": "citellus.json"},
-    "extra/citellus.web": {"path": "citellus.html"},
+    "extra/risu.json": {"path": "risu.json"},
+    "extra/risu.web": {"path": "risu.html"},
 }
 
 EXTRA_TEMPLATES_PATHS = [

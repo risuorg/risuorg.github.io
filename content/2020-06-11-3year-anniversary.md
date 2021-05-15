@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Citellus: 3 year anniversary
+title: Risu: 3 year anniversary
 date: 2020-06-11 07:55:38 +0200
 comments: true
-tags: citellus, magui
+tags: Risu, magui
 category: blog
 description:
 author: Robin Černín
@@ -13,7 +13,7 @@ author: Robin Černín
 
 ![We're 3 year old]({attach}images/3year.jpg)
 
-Citellus has been now around for three years!
+Risu has been now around for three years!
 
 On June 11th 2017 I have created this project for automating manual checks that I had to perform over and over again. It was very simple shell script that iterated over directories and executed shell scripts in them.
 
@@ -29,16 +29,16 @@ After a while our colleagues from U.S. have noticed the program with the new imp
 
 David Vallee Delisle, DVD created a dashboard that allowed to read the reports of the rules in the browser and greatly improved usability.
 
-Pablo continued working on the framework and forever improving it and adding more features, one of the big ones was M.A.G.U.I. that stands for Multiple Analysis Generic Unifier and Interpreter that allowed running Citellus on top of cluster of multiple nodes.
+Pablo continued working on the framework and forever improving it and adding more features, one of the big ones was M.A.G.U.I. that stands for Multiple Analysis Generic Unifier and Interpreter that allowed running Risu on top of cluster of multiple nodes.
 
-For a while these two were separated programs, but we realised that M.A.G.U.I. brought benefits into Citellus and they both merged under Citellus.
+For a while these two were separated programs, but we realised that M.A.G.U.I. brought benefits into Risu and they both merged under Risu.
 
 We have spent probably a thousand of hours or more of our free time that we have dedicated into writing this program and some of the internal rules or public.
 
 During all this time we have had contributors that came and went, and some are still contributing to the project. I would like to shout out to Mikel and his contribution and his time.
 
-The most important thing with this project is that even after three years, Citellus is still important.
+The most important thing with this project is that even after three years, Risu is still important.
 
-During this period we've enhanced Citellus to be integrated as described in the [What's new]({tag}whatsnew) documents.
+During this period we've enhanced Risu to be integrated as described in the [What's new]({tag}whatsnew) documents.
 
-Happy birthday Citellus!!
+Happy birthday Risu!!

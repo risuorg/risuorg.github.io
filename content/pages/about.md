@@ -9,33 +9,33 @@ url:
 save_as: index.html
 ---
 
-<img src="../images/citellus-mini.png" width="20%" border=0 align="right" alt='Citellus logo'>
+<img src="../images/Risu-mini.png" width="20%" border=0 align="right" alt='Risu logo'>
 
 **Table of contents**
 
 <!-- TOC depthFrom:1 insertAnchor:true orderedList:true -->
 
-- [What is Citellus?](#what-is-citellus)
+- [What is Risu?](#what-is-Risu)
 - [What's new?](#whats-new)
 - [Who are we?](#who-are-we)
 - [Quick glance:](#quick-glance)
 - [Code status](#code-status)
-  - [Citellus](#citellus)
+  - [Risu](#Risu)
   - [Nexus](#nexus)
   - [Citmetrics](#citmetrics)
 - [Get it!](#get-it)
 
 <!-- /TOC -->
 
-<a id="markdown-what-is-citellus" name="what-is-citellus"></a>
+<a id="markdown-what-is-Risu" name="what-is-Risu"></a>
 
-### What is Citellus?
+### What is Risu?
 
 Is a tool based on execution of simple 'plugins' written in the language that is more convenient for you as long as it is based on some standard conventions.
 
 It is made with several parts working together:
 
-- Citellus: The framework running the plugins and the plugins
+- Risu: The framework running the plugins and the plugins
 - Nexus: The web Interface (optional) to have a centralized server
 - Citmetrics: Additional tools to receive incoming metrics from executions (that will be merged with nexus in the future)
 - Additional repos containing your plugins
@@ -44,7 +44,7 @@ It is made with several parts working together:
 
 ### What's new?
 
-- Check the entries that we're pushing to [Citellus blog]({category}blog) or subscribe to our feed.
+- Check the entries that we're pushing to [Risu blog]({category}blog) or subscribe to our feed.
 
 - Check archives at [Archives](/archives)
 - Check tags in posts at [Tags](/tags)
@@ -59,37 +59,37 @@ We're a group of technology enthusiasts working in different areas ranging from 
 
 ### Quick glance:
 
-<a href="https://asciinema.org/a/169814"><img src="https://asciinema.org/a/169814.png" width="100%" border=0  alt='Citellus demo'></a>
+<a href="https://asciinema.org/a/169814"><img src="https://asciinema.org/a/169814.png" width="100%" border=0  alt='Risu demo'></a>
 
 <a id="markdown-code-status" name="code-status"></a>
 
 ### Code status
 
-<a id="markdown-citellus" name="citellus"></a>
+<a id="markdown-Risu" name="Risu"></a>
 
-#### Citellus
+#### Risu
 
-[![License](https://img.shields.io/github/license/citellusorg/citellus.svg)](LICENSE)
-[![Build Status](https://travis-ci.org/citellusorg/citellus.svg?branch=master)](https://travis-ci.org/citellusorg/citellus)
-[![PyPI version](https://badge.fury.io/py/citellus.svg)](https://badge.fury.io/py/citellus)
-[![](https://images.microbadger.com/badges/image/citellus/citellus.svg)](https://microbadger.com/images/citellus/citellus "Get your own image badge on microbadger.com")
+[![License](https://img.shields.io/github/license/Risuorg/Risu.svg)](LICENSE)
+[![Build Status](https://travis-ci.org/Risuorg/Risu.svg?branch=master)](https://travis-ci.org/Risuorg/Risu)
+[![PyPI version](https://badge.fury.io/py/Risu.svg)](https://badge.fury.io/py/Risu)
+[![](https://images.microbadger.com/badges/image/Risu/Risu.svg)](https://microbadger.com/images/Risu/Risu "Get your own image badge on microbadger.com")
 
 <a id="markdown-nexus" name="nexus"></a>
 
 #### Nexus
 
-[![License](https://img.shields.io/github/license/citellusorg/nexus.svg)](LICENSE)
-[![Build Status](https://travis-ci.org/citellusorg/nexus.svg?branch=master)](https://travis-ci.org/citellusorg/nexus)
+[![License](https://img.shields.io/github/license/Risuorg/nexus.svg)](LICENSE)
+[![Build Status](https://travis-ci.org/Risuorg/nexus.svg?branch=master)](https://travis-ci.org/Risuorg/nexus)
 
 <a id="markdown-citmetrics" name="citmetrics"></a>
 
 #### Citmetrics
 
-[![License](https://img.shields.io/github/license/citellusorg/citmetrics.svg)](LICENSE)
-[![Build Status](https://travis-ci.org/citellusorg/citmetrics.svg?branch=master)](https://travis-ci.org/citellusorg/citmetrics)
+[![License](https://img.shields.io/github/license/Risuorg/citmetrics.svg)](LICENSE)
+[![Build Status](https://travis-ci.org/Risuorg/citmetrics.svg?branch=master)](https://travis-ci.org/Risuorg/citmetrics)
 
 <a id="markdown-get-it" name="get-it"></a>
 
 ### Get it!
 
-Just head to <https://github.com/citellusorg/citellus/> and get the code!
+Just head to <https://github.com/Risuorg/Risu/> and get the code!

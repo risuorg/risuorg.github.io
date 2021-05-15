@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Citellus</title>
+    <title>Risu</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.59.3/css/patternfly.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.59.3/css/patternfly-additions.min.css">
     <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
@@ -123,9 +123,9 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a target="_blank" href="https://github.com/citellusorg/citellus/blob/master/README.md">Usage Doc</a></li>
-                            <li><a target="_blank" href="https://github.com/citellusorg/citellus/tree/master/doc">Plugin Development</a></li>
-                            <li><a target="_blank" href="https://github.com/citellusorg/citellus/blob/master/CONTRIBUTING.md">Contribute</a></li>
+                            <li><a target="_blank" href="https://github.com/Risuorg/Risu/blob/master/README.md">Usage Doc</a></li>
+                            <li><a target="_blank" href="https://github.com/Risuorg/Risu/tree/master/doc">Plugin Development</a></li>
+                            <li><a target="_blank" href="https://github.com/Risuorg/Risu/blob/master/CONTRIBUTING.md">Contribute</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -196,13 +196,13 @@
         <!-- /row -->
         <div class="clearfix">
             <div class="col-sm">
-                <table id="metadata_table_citellus" class="table table-hover table-bordered">
+                <table id="metadata_table_Risu" class="table table-hover table-bordered">
                     <thead>
-                        <tr id="metadata_table_citellus_header">
+                        <tr id="metadata_table_Risu_header">
                             <th colspan=2 class="text-left">Runtime Metadata</th>
                         </tr>
                     </thead>
-                    <tbody id="metadata_table_citellus_body" style="display: none;"></tbody>
+                    <tbody id="metadata_table_Risu_body" style="display: none;"></tbody>
                 </table>
             </div>
             <!-- /col -->
@@ -212,11 +212,11 @@
             <!-- Table HTML -->
             <table class="table table-striped table-bordered table-hover" id="table1">
                 <thead>
-                    <tr id="profile_table_citellus_header">
+                    <tr id="profile_table_Risu_header">
                         <th>Profiles</th>
                     </tr>
                 </thead>
-                <tbody id="profile_table_citellus_body" style="">
+                <tbody id="profile_table_Risu_body" style="">
                     <tr id="profile-group" class="list-group list-view-pf list-view-pf-view">
                     </tr>
                 </tbody>
@@ -227,11 +227,11 @@
             <!-- Table HTML -->
             <table class="table table-striped table-bordered table-hover" id="table2">
                 <thead>
-                    <tr id="report_table_citellus_header">
+                    <tr id="report_table_Risu_header">
                         <th>Report</th>
                     </tr>
                 </thead>
-                <tbody id="report_table_citellus_body" style="">
+                <tbody id="report_table_Risu_body" style="">
                     <tr id="list-group" class="list-group list-view-pf list-view-pf-view">
                     </tr>
                 </tbody>
@@ -269,7 +269,7 @@
         // text search minimum characters before we fire the search
         var ft_min_char = 3;
         // List of json files we're looking
-        var jsonFilesList = ["citellus.json", "magui.json"]
+        var jsonFilesList = ["Risu.json", "magui.json"]
         var plugin_cats_array = new Array();
         var server_array = new Array();
         // function to get query string
@@ -497,7 +497,7 @@
             return row
         }
         // function that generates a row to add to the accordion
-        function printCitellusPlugin(result, out, err, rc, data, plugin_var_name = false) {
+        function printRisuPlugin(result, out, err, rc, data, plugin_var_name = false) {
             var plugin_names = getPluginNames(result)
             if (plugin_var_name == "metadata-outputs") {
                 plugin_names.cat = "metadata";
@@ -663,7 +663,7 @@
             var div_otherJsons = $("#otherJsons");
             jsonFile = getParameterByName("json");
             if (jsonFile == null) {
-                jsonFile = "citellus.json";
+                jsonFile = "Risu.json";
             }
             for (i = 0; i < jsonFilesList.length; ++i) {
                 checkForFile(jsonFilesList[i])
@@ -711,14 +711,14 @@
                 checkAllCat(false);
                 $("#cb_cat_" + cat).prop("checked", true).change();
             });
-            $("body").on("click", '#metadata_table_citellus_header', function(e) {
-                $("#metadata_table_citellus_body").toggle()
+            $("body").on("click", '#metadata_table_Risu_header', function(e) {
+                $("#metadata_table_Risu_body").toggle()
             });
-            $("body").on("click", '#profile_table_citellus_header', function(e) {
-                $("#profile_table_citellus_body").toggle()
+            $("body").on("click", '#profile_table_Risu_header', function(e) {
+                $("#profile_table_Risu_body").toggle()
             });
-            $("body").on("click", '#report_table_citellus_header', function(e) {
-                $("#report_table_citellus_body").toggle()
+            $("body").on("click", '#report_table_Risu_header', function(e) {
+                $("#report_table_Risu_body").toggle()
             });
             // click the list-view heading then expand a row
             $("body").on("click", ".list-group-item-header", function(event) {
@@ -756,7 +756,7 @@
             $("body").on("click", ".json-files", function(e) {
                 window.location.href = [location.protocol, '//', location.host, location.pathname].join('') + "?json=" + $(this).html();
             });
-            // Here we load the data from citellus.json with ajax and we populate the webpage
+            // Here we load the data from Risu.json with ajax and we populate the webpage
             $.ajax({
                 url: jsonFile,
                 dataType: "json",
@@ -785,15 +785,15 @@
                     }
                 },
                 beforeSend: function() {
-                        $("#report_table_citellus_body").append('<tr id="loading"><td>Loading ' +jsonFile+'... <span class="fa fa-refresh"/></td></tr>');
+                        $("#report_table_Risu_body").append('<tr id="loading"><td>Loading ' +jsonFile+'... <span class="fa fa-refresh"/></td></tr>');
                 },
                 success: function(data) {
                         // delete row with "loading" message
-                        $('tbody#report_table_citellus_body tr#loading').remove();
+                        $('tbody#report_table_Risu_body tr#loading').remove();
                         // We need to generate some kind of plugin id with the filename
                         $.each(data.metadata, function(i, item) {
                             var row = '<tr><th>' + i + '</th><td>' + item + '</td></tr>\n';
-                            $("#metadata_table_citellus > tbody:last-child").append(row);
+                            $("#metadata_table_Risu > tbody:last-child").append(row);
                             // Set title according to metadata
                             if (i == "title"){
                                 document.getElementById("reporttitle").innerText=item
@@ -823,8 +823,8 @@
                                 $("#category-list").html(div_cat_list);
                                 $("#numresults").html(counter);
                             }
-                            // Here we have a citellus.json
-                            if (data.metadata.source == "citellus") {
+                            // Here we have a Risu.json
+                            if (data.metadata.source == "Risu") {
                                 if (item.backend == "profile") {
                                     var plugins = new Array()
                                     $.each(JSON.parse(item.result.err), function (i,o) {
@@ -839,10 +839,10 @@
                                     console.log(plugins)
                                     item.result.err = plugins
                                 }
-                                printCitellusPlugin(item, item.result.out, item.result.err, item.result.rc, data);
+                                printRisuPlugin(item, item.result.out, item.result.err, item.result.rc, data);
                                 // Here we have a magui.json
                             } else if (data.metadata.source == "magui") {
-                                if (item.plugin == "citellus-outputs" || item.plugin == "metadata-outputs") {
+                                if (item.plugin == "Risu-outputs" || item.plugin == "metadata-outputs") {
                                     $.each(item.result, function(s, result) {
                                         if (s == "err") {
                                             $.each(result, function(plugin, pdata) {
@@ -883,13 +883,13 @@
                                                     }
                                                 })
                                                 if (pdata.backend == "profile") gerr = plugins
-                                                printCitellusPlugin(pdata, gout, gerr, grc, data, item.plugin)
+                                                printRisuPlugin(pdata, gout, gerr, grc, data, item.plugin)
                                             }); // each result
                                         } // s == "err"
                                     }); // each item.result
                                 } else {
-                                    printCitellusPlugin(item, item.result.out, item.result.err, item.result.rc, data, false, "magui")
-                                } // if citellus-outputs
+                                    printRisuPlugin(item, item.result.out, item.result.err, item.result.rc, data, false, "magui")
+                                } // if Risu-outputs
                             } // if data source == "magui"
                         }); // each data.result
                         $("#numtests").html(counter);
