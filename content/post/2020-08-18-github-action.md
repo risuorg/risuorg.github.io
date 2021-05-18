@@ -36,7 +36,7 @@ We've moved some of the CI in the repository from Travis to GHA to take advantag
 
 ### The path to Risu Github Action
 
-With the recent changes in Risu [What's new]({tag}whatsnew) like the extra plugin tree and configuration path, we were already on the path to get more Risu automation....
+With the recent changes in Risu [What's new]({{< ref "/tags/whatsnew" >}}) like the extra plugin tree and configuration path, we were already on the path to get more Risu automation....
 
 <https://github.com/Risuorg/gh-action-Risu> has been created for that purpose.
 
@@ -46,8 +46,8 @@ You can check one repository using it at <https://github.com/iranzo/ipival/> and
 
 As it's always easier to learn by an example, check those files:
 
-- `.Risu.conf` at <https://github.com/iranzo/ipival/blob/master/.Risu.conf> which defines the `web` output, `excludes` to rule out all the `Risuclient` plugins, defines `title` for the report and defines an `extraplugintree` in the subfolder of this repository.
-- `.github/workflows/Risu.yml` at <https://github.com/iranzo/ipival/blob/master/.github/workflows/Risu.yml> which defines to run the action on each push to master branch, and also via daily cron execution, defining the following properties for the script (that will be used by the prior commented `entrypoint.sh`):
+- `.risu.conf` at <https://github.com/iranzo/ipival/blob/master/.risu.conf> which defines the `web` output, `excludes` to rule out all the `Risuclient` plugins, defines `title` for the report and defines an `extraplugintree` in the subfolder of this repository.
+- `.github/workflows/risu.yml` at <https://github.com/iranzo/ipival/blob/master/.github/workflows/Risu.yml> which defines to run the action on each push to master branch, and also via daily cron execution, defining the following properties for the script (that will be used by the prior commented `entrypoint.sh`):
 
 ```yaml
 - uses: Risuorg/gh-action-Risu@1.0

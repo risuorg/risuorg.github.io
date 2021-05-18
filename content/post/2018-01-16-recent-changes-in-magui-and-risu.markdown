@@ -8,19 +8,6 @@ category: blog
 description:
 ---
 
-**Table of contents**
-
-<!-- TOC depthFrom:1 insertAnchor:true orderedList:true -->
-
-1. [What's new?](#whats-new)
-   1. [Risu](#Risu)
-   2. [Magui](#magui)
-2. [Wrap up!](#wrap-up)
-
-<!-- /TOC -->
-
-<a id="markdown-whats-new" name="whats-new"></a>
-
 ## What's new?
 
 During recent weeks we've been coding and performing several changes to [Risu](https://iranzo.github.io/blog/2017/07/26/Risu-framework-for-detecting-known-issues/) and [Magui](https://iranzo.github.io/blog/2017/07/31/Magui-for-analysis-of-issues-across-several-hosts/).
@@ -30,8 +17,6 @@ Checking the latest logs or list of issues open and closed on github is probably
 First of all, we're going to present it at [Devconf.cz 2018](https://devconfcz2018.sched.com/event/DJXG/detect-pitfalls-of-osp-deployments-with-Risu), so come stop-by if assisting :-)
 
 Some of the changes include...
-
-<a id="markdown-Risu" name="Risu"></a>
 
 ### Risu
 
@@ -64,8 +49,6 @@ Some of the changes include...
   - A new plugin in python `reboot.py` that checks for unexpected reboots
   - Spectre/Meltdown security checks!
 
-<a id="markdown-magui" name="magui"></a>
-
 ### Magui
 
 - If there's an existing `Risu.json` magui does load it to speed it up process across multiple sosreports.
@@ -84,8 +67,6 @@ Some of the changes include...
   - `release`
     - Reports RHEL release across hosts and warns if is different across hosts
 - Enable `quiet` mode on the data received from Risu as well as local plugins, so only outputs with ERROR or different output on sosreports is shown, even on magui plugins.
-
-<a id="markdown-wrap-up" name="wrap-up"></a>
 
 ## Wrap up!
 

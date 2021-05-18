@@ -8,54 +8,25 @@ description:
 menu: main
 ---
 
-**Table of contents**
-
-<!-- TOC depthFrom:1 insertAnchor:true orderedList:true -->
-
-- [Changelog hilights](#changelog-hilights)
-- [2018-03-25](#2018-03-25)
-- [2018-03-18](#2018-03-18)
-- [2018-03-02](#2018-03-02)
-- [2018-02-17](#2018-02-17)
-- [2018-02-11](#2018-02-11)
-- [2018-01-27](#2018-01-27)
-- [2018-01-24](#2018-01-24)
-- [2018-01-22](#2018-01-22)
-- [2018-01-16](#2018-01-16)
-  - [Risu](#risu)
-  - [Magui](#magui)
-
-<!-- /TOC -->
-
-<a id="markdown-changelog-hilights" name="changelog-hilights"></a>
-
 ## Changelog hilights
 
 This file will contain a manually mantained log of hilights between versions, it's not a very extensive detail, but some of the bigger changes/ideas will be added here.
 
-Check [What's new]({tag}whatsnew): tag for more updated information.
-
-<a id="markdown-2018-03-25" name="2018-03-25"></a>
+Check [What's new]({{< ref "/tags/whatsnew" >}}): tag for more updated information.
 
 ## 2018-03-25
 
 - Implement `--find` to Risu so that it can grep across a folder set for checking historic data for tests.
-
-<a id="markdown-2018-03-18" name="2018-03-18"></a>
 
 ## 2018-03-18
 
 - Magui autogrouping support, generating files for each comparison set like osp roles, same hostname, etc. It's based on metadata plugins generated.
   - Skip reexecution if a specified sosreport set was already analyzed.
 
-<a id="markdown-2018-03-02" name="2018-03-02"></a>
-
 ## 2018-03-02
 
 - Implemented 'faraday-exec' plugin to generate fake plugins that run and output metadata that later is faked via a datahook to be compared via magui plugins.
 - Implemented automatic pypi.org package generation for each master merge that allows to run Risu installed via 'pip' or 'pipsi'.
-
-<a id="markdown-2018-02-17" name="2018-02-17"></a>
 
 ## 2018-02-17
 
@@ -63,8 +34,6 @@ Check [What's new]({tag}whatsnew): tag for more updated information.
   - Allow to define a text file with include/exclude filter and description that grabs data from the obtained results and shows in one place all return codes and error messages received
   - This will allow to define 'healthchecks' based on other plugins output and generate them dinamycall.
   - As it is done as if another plugin was executed, same Web UI interface is available for checking results.
-
-<a id="markdown-2018-02-11" name="2018-02-11"></a>
 
 ## 2018-02-11
 
@@ -83,14 +52,10 @@ Several changes introduced recently:
   - Now uses the generated 'name' for plugins so we can tune it from the framework side.
   - Also, auto switches to `magui.json` when no `Risu.json` exists, or shows a dropdown to select which one to show.
 
-<a id="markdown-2018-01-27" name="2018-01-27"></a>
-
 ## 2018-01-27
 
 - DevConf.cz 2018 [Detect pitfalls of osp deployments with Risu](https://devconfcz2018.sched.com/event/DJXG/detect-pitfalls-of-osp-deployments-with-Risu)
   - Recording at <https://www.youtube.com/watch?v=SDzzqrUdn5A>
-
-<a id="markdown-2018-01-24" name="2018-01-24"></a>
 
 ## 2018-01-24
 
@@ -100,8 +65,6 @@ Several changes introduced recently:
 
   - In order to simplify this a new extension has been created so adding a new file to monitor no longer requires new plugins for `Risu` or `magui` but just creating a text file with some data within as documented on `Risuclient/plugins/faraday/README.md`
 
-<a id="markdown-2018-01-22" name="2018-01-22"></a>
-
 ## 2018-01-22
 
 - Changed the way we work with sosreports for Risu and Magui:
@@ -109,11 +72,7 @@ Several changes introduced recently:
   - If the folder is writable, Risu will write `Risu.json` to sosreport folder.
   - If there's an existing `Risu.json` it will be loaded from disk and run skipped unless there are new plugins that require execution. Forcing execution can be indicated with parameter `-r` to both Magui and Risu.
 
-<a id="markdown-2018-01-16" name="2018-01-16"></a>
-
 ## 2018-01-16
-
-<a id="markdown-risu" name="risu"></a>
 
 ### Risu
 
@@ -145,8 +104,6 @@ Several changes introduced recently:
   - Now we do have more than 119 across different categories
   - A new plugin in python `reboot.py` that checks for unexpected reboots
   - Spectre/Meltdown security checks!
-
-<a id="markdown-magui" name="magui"></a>
 
 ### Magui
 

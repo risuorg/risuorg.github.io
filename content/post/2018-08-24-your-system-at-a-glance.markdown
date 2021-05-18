@@ -11,7 +11,7 @@ author: Pablo Iranzo Gómez
 
 ## What's new?
 
-Other posts in this category: [What's new]({tag}whatsnew)
+Other posts in this category: [What's new]({{< ref "/tags/whatsnew" >}})
 
 ### System information summary
 
@@ -23,11 +23,11 @@ Based on this, and by adjusting `sysinfo.txt` profile, for example to create a `
 
 Have a look on how it might look like based on current [Gerrit reviews](https://review.gerrithub.io/c/Risuorg/Risu/+/423423):
 
-![sysinfo]({attach}images/sysinfo.jpg)
+![sysinfo](/images/sysinfo.jpg)
 
 And for example, for OSP:
 
-![sysinfo-osp]({attach}images/sysinfo-osp.jpg)
+![sysinfo-osp](/images/sysinfo-osp.jpg)
 
 Enjoy and contribute the System information you'll like to see!
 

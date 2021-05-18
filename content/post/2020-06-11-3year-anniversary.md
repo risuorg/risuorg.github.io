@@ -11,7 +11,7 @@ author: Robin Černín
 
 ## Time flies!
 
-![We're 3 year old]({attach}images/3year.jpg)
+![We're 3 year old](/images/3year.jpg)
 
 Risu has been now around for three years!
 
@@ -39,6 +39,6 @@ During all this time we have had contributors that came and went, and some are s
 
 The most important thing with this project is that even after three years, Risu is still important.
 
-During this period we've enhanced Risu to be integrated as described in the [What's new]({tag}whatsnew) documents.
+During this period we've enhanced Risu to be integrated as described in the [What's new]({{< ref "/tags/whatsnew" >}}) documents.
 
 Happy birthday Risu!!

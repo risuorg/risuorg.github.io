@@ -11,11 +11,11 @@ author: Pablo Iranzo Gómez
 
 ## Time flies!
 
-![We're 2 year old]({attach}images/2year.jpg)
+![We're 2 year old](/images/2year.jpg)
 
 Today, Risu makes the two years milestone.
 
-Last year we got [this article]({filename}2018-06-11-1year-anniversary.markdown) on it.
+Last year we got [this article]({{< ref "2018-06-11-1year-anniversary.markdown" >}}) on it.
 
 This year not a lot of changes happened compared to the last one:
 
@@ -26,6 +26,6 @@ This year not a lot of changes happened compared to the last one:
 
 Thanks a lot for all your support during this period and counting on it for the years to come!
 
-Do [contribute]({filename}/pages/CONTRIBUTING.md) to get us to the next level!
+Do [contribute]({{< ref "../CONTRIBUTING.md" >}}) to get us to the next level!
 
 Happy birthday Risu!!

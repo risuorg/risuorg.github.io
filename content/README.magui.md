@@ -8,27 +8,9 @@ description:
 menu: main
 ---
 
-**Table of contents**
-
-<!-- TOC depthFrom:1 insertAnchor:true orderedList:false -->
-
-    - [Introduction](#introduction)
-    - [Highlights](#highlights)
-    - [Installation](#installation)
-    - [Usage help](#usage-help)
-        - [Running a check](#running-a-check)
-            - [Running a check against remote hosts](#running-a-check-against-remote-hosts)
-            - [Autogrouping](#autogrouping)
-
-- [Plugin development for Magui](#plugin-development-for-magui)
-
-<!-- /TOC -->
-
-<a id="markdown-introduction" name="introduction"></a>
-
 ## Introduction
 
-Magui is a wrapper that calls functions from the Python library of Risu [README]({filename}README.Risu.md).
+Magui is a wrapper that calls functions from the Python library of Risu [README]({{< ref "README.Risu.md" >}}).
 
 Some problems are not detected only on one node, but are made by the aggregation of data across them, for example:
 
@@ -38,8 +20,6 @@ Some problems are not detected only on one node, but are made by the aggregation
 - RHEL release differences
 
 Magui aims to use Risu for gathering the data and later, write plugins to analyze that information.
-
-<a id="markdown-highlights" name="highlights"></a>
 
 ## Highlights
 
@@ -54,8 +34,6 @@ Magui aims to use Risu for gathering the data and later, write plugins to analyz
 - Web interface using `risu.html?json=magui.json`
 
 Check latest changes on <Changelog.md>
-
-<a id="markdown-installation" name="installation"></a>
 
 ## Installation
 
@@ -86,8 +64,6 @@ Check latest changes on <Changelog.md>
   - Notes about using docker:
     - Docker passes as volume the path specified under /data so we do use that parameter with Risu for running the tests.
     - The default user id within the container is 10001 and the commands or sosreport permissions doesn't allow that user to gather all the information, so the container is required to run as the current user.
-
-<a id="markdown-usage-help" name="usage-help"></a>
 
 ## Usage help
 
@@ -150,8 +126,6 @@ In a directory structure as:
 
 `docker run --user=$(id -u) --rm --entrypoint="magui.py" -v /path/to/my/sosreports/:/data:Z Risu:latest -q /data/sosreport-overcloud-controller-0/ /data/sosreport-overcloud-controller-1/ /data/sosreport-overcloud-controller-2/`
 
-<a id="markdown-running-a-check" name="running-a-check"></a>
-
 ### Running a check
 
 This is an example of execution of Magui against a set of sosreports with `seqno` plugin of Risu enabled.
@@ -171,8 +145,6 @@ This is an example of execution of Magui against a set of sosreports with `seqno
 On this example, UUID and SEQNO is shown for each controller.
 ```
 
-<a id="markdown-running-a-check-against-remote-hosts" name="running-a-check-against-remote-hosts"></a>
-
 #### Running a check against remote hosts
 
 ```sh
@@ -184,15 +156,11 @@ echo "host2" >> hostsfile
 ./magui.py --hosts hostsfile
 ```
 
-<a id="markdown-autogrouping" name="autogrouping"></a>
-
 #### Autogrouping
 
 <a href="https://asciinema.org/a/170429"><img src="https://asciinema.org/a/170429.png" width="100%" border=0  alt='Autogrouping dmeo'></a>
 
 Magui does check `metadata` for finding host roles or hostnames that should be checked together and generates additional json files for them.
-
-<a id="markdown-plugin-development-for-magui" name="plugin-development-for-magui"></a>
 
 # Plugin development for Magui
 

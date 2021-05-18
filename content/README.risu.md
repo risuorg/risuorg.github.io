@@ -8,25 +8,7 @@ description:
 menu: main
 ---
 
-<img src="../images/Risu-mini.png" width="20%" border=0 align="right" alt='Risu logo'>
-
-**Table of contents**
-
-<!-- TOC depthFrom:1 insertAnchor:true orderedList:true -->
-
-- [Introduction](#introduction)
-- [Highlights](#highlights)
-- [Installation](#installation)
-- [Usage help](#usage-help)
-- [Plugins and their descriptions](#plugins-and-their-descriptions)
-- [Doing a live check example](#doing-a-live-check-example)
-- [Doing a fs snapshot check example](#doing-a-fs-snapshot-check-example)
-- [HTML Interface](#html-interface)
-- [Ansible playbooks](#ansible-playbooks)
-
-<!-- /TOC -->
-
-<a id="markdown-introduction" name="introduction"></a>
+<img src="../images/risu-mini.png" width="20%" border=0 align="right" alt='Risu logo'>
 
 ## Introduction
 
@@ -35,8 +17,6 @@ Risu is a program that should help with system configuration validation on eithe
 Via execution of 'plugins' it reports status on each one execution against the system that gives you an idea on health status, actual problems or problems that will reveal themselves if no preventive action is taken.
 
 Please if you have any idea on any improvements please do not hesitate to open an issue.
-
-<a id="markdown-highlights" name="highlights"></a>
 
 ## Highlights
 
@@ -47,11 +27,9 @@ Please if you have any idea on any improvements please do not hesitate to open a
 - Ansible playbook support.
 - Save / restore default settings
 
-Check latest changes on [Changelog.md]({filename}Changelog.md)
+Check latest changes on [Changelog.md]({{< ref "Changelog.md" >}})
 
-Check for plugins listing on [Risuclient/plugins/](Risuclient/plugins/)
-
-<a id="markdown-installation" name="installation"></a>
+Check for plugins listing on [risuclient/plugins/](risuclient/plugins/)
 
 ## Installation
 
@@ -82,8 +60,6 @@ Check for plugins listing on [Risuclient/plugins/](Risuclient/plugins/)
   - Notes about using docker:
     - Docker passes as volume the path specified under /data so we do use that parameter with Risu for running the tests.
     - The default user id within the container is 10001 and the commands or sosreport permissions doesn't allow that user to gather all the information, so the container is required to run as the current user.
-
-<a id="markdown-usage-help" name="usage-help"></a>
 
 ## Usage help
 
@@ -155,8 +131,6 @@ Config options:
 Check how does it look in an execution at:
 <a href="https://asciinema.org/a/169814"><img src="https://asciinema.org/a/169814.png" width="100%" border=0  alt='Risu demo'></a>
 
-<a id="markdown-plugins-and-their-descriptions" name="plugins-and-their-descriptions"></a>
-
 ## Plugins and their descriptions
 
 This is new feature of Risu that will show you available scripts and their description.
@@ -172,8 +146,6 @@ This is new feature of Risu that will show you available scripts and their descr
 {'backend': 'core', 'description': 'Checks for wrong auth_url configuration in metadata_agent.ini', 'plugin': '/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron/1340001.sh'}
 {'backend': 'core', 'description': 'Checks python-ryu tracebacks', 'plugin': '/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron/1450223.sh'}
 ```
-
-<a id="markdown-doing-a-live-check-example" name="doing-a-live-check-example"></a>
 
 ## Doing a live check example
 
@@ -204,8 +176,6 @@ INFO:Risu:using default plugin path
     metering_time_to_live = -1
 ```
 
-<a id="markdown-doing-a-fs-snapshot-check-example" name="doing-a-fs-snapshot-check-example"></a>
-
 ## Doing a fs snapshot check example
 
 This is an example of execution of Risu using `pacemaker` and `openstack` filter against fs snapshot.
@@ -235,8 +205,6 @@ INFO:Risu:using default plugin path
     metering_time_to_live = -1
 ```
 
-<a id="markdown-html-interface" name="html-interface"></a>
-
 ## HTML Interface
 
 - Create by using `--output $FOLDER` and `--web`, open the generated `risu.html`.
@@ -250,8 +218,6 @@ INFO:Risu:using default plugin path
 ```
 http://host/risu.html?json=magui.json
 ```
-
-<a id="markdown-ansible-playbooks" name="ansible-playbooks"></a>
 
 ## Ansible playbooks
 

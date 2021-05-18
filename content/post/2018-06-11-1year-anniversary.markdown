@@ -11,13 +11,13 @@ author: Pablo Iranzo Gómez
 
 ## Time flies!
 
-![We're 1 year old]({attach}images/1year.jpg)
+![We're 1 year old](/images/1year.jpg)
 
 When you look back in time, some dates are more important than others because of what they bring to memory, for us `Sun Jun 11 12:45:38 2017 +0200` is a special date...
 
 One year ago, this `commit` <https://github.com/Risuorg/Risu/commit/fd5e56fbd946ba12aaef5e3776c341c4eab6b882> from Robin, demonstrated our commitment to make issue diagnostics faster and easier by putting automation and `Risu` was born.
 
-Since then, lot of [new things happened]({tag}whatsnew):
+Since then, lot of [new things happened]({{< ref "/tags/whatsnew" >}}):
 
 - Framework rewritten in python, parallelism, filters, etc
 - Code review, Unit testing
@@ -39,6 +39,6 @@ Want some numbers?
 
 Thanks a lot for all your support during this period and counting on it for the years to come!
 
-Do [contribute]({filename}/pages/CONTRIBUTING.md) to get us to the next level!
+Do [contribute]({{< ref "../CONTRIBUTING.md" >}}) to get us to the next level!
 
 Happy birthday Risu!!

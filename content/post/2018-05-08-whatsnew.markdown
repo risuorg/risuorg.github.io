@@ -10,11 +10,11 @@ description:
 
 ## What's new?
 
-Our previous edition of What's new was stored externally at <https://iranzo.github.io/blog/2018/01/16/recent-changes-in-magui-and-Risu/>, so we've copied to this website for completeness (now locally at: [Whats new]({filename}2018-01-16-recent-changes-in-magui-and-Risu.markdown))
+Our previous edition of What's new was stored externally at <https://iranzo.github.io/blog/2018/01/16/recent-changes-in-magui-and-Risu/>, so we've copied to this website for completeness (now locally at: [Whats new]({{< ref "2018-01-16-recent-changes-in-magui-and-Risu.markdown" >}}))
 
 What has happened since then?
 
-- We're presenting at SuperSec 2018 in Almería, Spain [SuperSec 2018]({filename}2018-04-16-supersec.md)
+- We're presenting at SuperSec 2018 in Almería, Spain [SuperSec 2018]({{< ref "2018-04-16-supersec.md" >}})
 - Up to 217 plugins as of today
 - Lot of code changes
 
