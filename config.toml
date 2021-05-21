@@ -65,3 +65,8 @@ menu = "main"
 [Params.widgets.social]
   # Enable parts of social widget
   github = "citellusorg"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
