@@ -25,10 +25,19 @@
 	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}>
 	{{- end }}
 
-	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
-	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
-	{{ range .Site.Params.customCSS -}}
-	<link rel="stylesheet" href="{{ . | relURL }}">
+	{{- /* Styles */}}
+	{{- $theme_vars := (resources.Get "css/style.css") }}
+	{{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
+
+
+	{{- /* order is important */}}
+	{{- $stylesheet := (slice $theme_vars $common) | resources.Concat "assets/css/core.css" | minify}}
+
+	{{- if not .Site.Params.assets.disableFingerprinting }}
+	{{- $stylesheet := $stylesheet | fingerprint }}
+	<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+	{{- else }}
+	<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
 	{{- end }}
 
 	{{- with .OutputFormats.Get "rss" }}
