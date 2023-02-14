@@ -1,0 +1,146 @@
+<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Risu - RISU</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><meta property="og:title" content="Risu"><meta property="og:description" content="Introduction Risu is a program that should help with system configuration validation on either live system or any sort of snapshot of the filesystem.
+Via execution of &lsquo;plugins&rsquo; it reports status on each one execution against the system that gives you an idea on health status, actual problems or problems that will reveal themselves if no preventive action is taken.
+Please if you have any idea on any improvements please do not hesitate to open an issue."><meta property="og:type" content="article"><meta property="og:url" content="https://risuorg.github.io/readme.risu/"><meta property="article:section" content><meta property="article:published_time" content="2016-06-02T17:27:47+02:00"><meta property="article:modified_time" content="2016-06-02T17:27:47+02:00"><meta itemprop=name content="Risu"><meta itemprop=description content="Introduction Risu is a program that should help with system configuration validation on either live system or any sort of snapshot of the filesystem.
+Via execution of &lsquo;plugins&rsquo; it reports status on each one execution against the system that gives you an idea on health status, actual problems or problems that will reveal themselves if no preventive action is taken.
+Please if you have any idea on any improvements please do not hesitate to open an issue."><meta itemprop=datePublished content="2016-06-02T17:27:47+02:00"><meta itemprop=dateModified content="2016-06-02T17:27:47+02:00"><meta itemprop=wordCount content="1124"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="Risu"><meta name=twitter:description content="Introduction Risu is a program that should help with system configuration validation on either live system or any sort of snapshot of the filesystem.
+Via execution of &lsquo;plugins&rsquo; it reports status on each one execution against the system that gives you an idea on health status, actual problems or problems that will reveal themselves if no preventive action is taken.
+Please if you have any idea on any improvements please do not hesitate to open an issue."><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link crossorigin=anonymous href=/assets/css/core.min.8ba71cf50a8381d9d94ef0bb5c7367004d6fe1de98371c5720571e9e48a03a3d.css integrity="sha256-i6cc9QqDgdnZTvC7XHNnAE1v4d6YNxxXIFcenkigOj0=" rel="preload stylesheet" as=style><link rel="shortcut icon" href=/favicon.ico><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-81705-14","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class="logo logo--mixed"><a class=logo__link href=/ title=RISU rel=home><div class="logo__item logo__imagebox"><img class=logo__img src=/images/risu.png></div><div class="logo__item logo__text"><div class=logo__title>RISU</div><div class=logo__tagline>Find and Report Issues</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/about/><span class=menu__text>About</span></a></li><li class=menu__item><a class=menu__link href=/contributing/><span class=menu__text>Contributing</span></a></li><li class=menu__item><a class=menu__link href=/readme.magui/><span class=menu__text>Magui</span></a></li><li class="menu__item menu__item--active"><a class=menu__link href=/readme.risu/><span class=menu__text>Risu</span></a></li><li class=menu__item><a class=menu__link href=/changelog/><span class=menu__text>Timeline</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>Risu</h1><div class="post__meta meta"><div class="meta__item-author meta__item"><svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2.0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class=meta__text>RISU team</span></div><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2016-06-02T17:27:47+02:00>2016-06-02</time></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><a href=#introduction>Introduction</a></li><li><a href=#highlights>Highlights</a></li><li><a href=#installation>Installation</a></li><li><a href=#usage-help>Usage help</a></li><li><a href=#plugins-and-their-descriptions>Plugins and their descriptions</a></li><li><a href=#doing-a-live-check-example>Doing a live check example</a></li><li><a href=#doing-a-fs-snapshot-check-example>Doing a fs snapshot check example</a></li><li><a href=#html-interface>HTML Interface</a></li><li><a href=#ansible-playbooks>Ansible playbooks</a></li></ul></nav></div></div><div class="content post__content clearfix"><h2 id=introduction>Introduction</h2><p>Risu is a program that should help with system configuration validation on either live system or any sort of snapshot of the filesystem.</p><p>Via execution of &lsquo;plugins&rsquo; it reports status on each one execution against the system that gives you an idea on health status, actual problems or problems that will reveal themselves if no preventive action is taken.</p><p>Please if you have any idea on any improvements please do not hesitate to open an issue.</p><h2 id=highlights>Highlights</h2><ul><li>Plugins written in your language of choice.</li><li>Allows to dump output to json file to be processed by other tools.<ul><li>Allow to visualize html from json output.</li><li>Check our sample at: <a href=/risu.html>Risu-www</a></li></ul></li><li>Ansible playbook support.</li><li>Save / restore default settings</li></ul><p>Check latest changes on <a href=https://risuorg.github.io/changelog/>Changelog.md</a></p><p>Check for plugins listing on <a href=risuclient/plugins/>risuclient/plugins/</a></p><h2 id=installation>Installation</h2><ul><li>Just clone the git repository and execute it from there &lsquo;or&rsquo;</li><li>use &lsquo;pipsi&rsquo; or create a python virtual env to install package &lsquo;Risu&rsquo;<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#75715e># pipsi install Risu</span>
+</span></span><span style=display:flex><span>Already using interpreter /usr/bin/python3
+</span></span><span style=display:flex><span>Using base prefix <span style=color:#e6db74>&#39;/usr&#39;</span>
+</span></span><span style=display:flex><span>New python executable in /home/iranzo/.local/venvs/Risu/bin/python3
+</span></span><span style=display:flex><span>Also creating executable in /home/iranzo/.local/venvs/Risu/bin/python
+</span></span><span style=display:flex><span>Installing setuptools, pip, wheel...done.
+</span></span><span style=display:flex><span>Collecting Risu
+</span></span><span style=display:flex><span>Installing collected packages: Risu
+</span></span><span style=display:flex><span>Successfully installed Risu-0.1.0.dev1072
+</span></span><span style=display:flex><span>  Linked script /home/iranzo/.local/bin/Risu.py
+</span></span><span style=display:flex><span>  Linked script /home/iranzo/.local/bin/magui.py
+</span></span><span style=display:flex><span>Done.
+</span></span></code></pre></div><ul><li>Pipsi will take care of installing a virtual environment and link to binary folder so you can call Risu.py or magui.py directly</li><li>Remember that pypi package might not contain all the latests plugins features as the github repo one.</li></ul></li><li>Container:<ul><li>Use our automatically built container in docker hub:<ul><li><code>docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z Risu/Risu:latest /data</code></li></ul></li><li>or build your own using the included <code>Dockerfile</code> in the git checkout.<ul><li><code>docker build . -f Dockerfile.centos7-atomic -t Risu:latest</code> # (from git checkout, then note image id)</li><li><code>docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z Risu:latest /data</code></li></ul></li><li>Notes about using docker:<ul><li>Docker passes as volume the path specified under /data so we do use that parameter with Risu for running the tests.</li><li>The default user id within the container is 10001 and the commands or sosreport permissions doesn&rsquo;t allow that user to gather all the information, so the container is required to run as the current user.</li></ul></li></ul></li></ul><h2 id=usage-help>Usage help</h2><p>We are developing framework in python, the bash framework has been deprecated. Python framework is the only supported framework.</p><pre tabindex=0><code>usage: Risu.py [arguments] [-h] [-l] [--list-plugins] [--list-extensions]
+                               [--list-categories] [--description]
+                               [--list-hooks] [--output FILENAME] [--web]
+                               [--run] [--find] [--blame] [--lang]
+                               [--only-failed] [-v]
+                               [-d {INFO,DEBUG,WARNING,ERROR,CRITICAL}] [-q]
+                               [-i SUBSTRING] [-x SUBSTRING] [-p [0-1000]]
+                               [-hf SUBSTRING] [--dump-config] [--no-config]
+                               [sosreport]
+
+Risu allows to analyze a directory against common set of tests, useful for
+finding common configuration errors
+
+positional arguments:
+  sosreport
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -l, --live            Work on a live system instead of a snapshot
+  --list-plugins        Print a list of discovered plugins and exit
+  --list-extensions     Print a list of discovered extensions and exit
+  --list-categories     With list-plugins, also print a list and count of
+                        discovered plugin categories
+  --description         With list-plugins, also outputs plugin description
+  --list-hooks          Print a list of discovered hooks and exit
+  --output FILENAME, -o FILENAME
+                        Write results to JSON file FILENAME
+  --web                 Write results to JSON file Risu.json and copy html
+                        interface in path defined in --output
+  --run, -r             Force run of Risu instead of reading existing
+                        &#39;Risu.json&#39;
+  --find                Use provided path at starting point for finding
+                        Risu.json and print them based on filters defined
+
+Output and logging options:
+  --blame               Report time spent on each plugin
+  --lang                Define locale to use
+  --only-failed, -F     Only show failed tests
+  -v, --verbose         Increase verbosity of output (may be specified more
+                        than once)
+  -d {INFO,DEBUG,WARNING,ERROR,CRITICAL}, --loglevel {INFO,DEBUG,WARNING,ERROR,CRITICAL}
+                        Set log level
+  -q, --quiet           Enable quiet mode
+
+Filtering options:
+  -i SUBSTRING, --include SUBSTRING
+                        Only include plugins that contain substring
+  -x SUBSTRING, --exclude SUBSTRING
+                        Exclude plugins that contain substring
+  -p [0-1000], --prio [0-1000]
+                        Only include plugins are equal or above specified prio
+  -hf SUBSTRING, --hfilter SUBSTRING
+                        Only include hooks that contain substring
+
+Config options:
+  --dump-config         Dump config to console to be saved into file
+  --no-config           Do not read configuration from file /home/iranzo/DEVEL
+                        /Risu/Risuclient/Risu.conf or
+                        ~/.Risu.conf
+</code></pre><p>Check how does it look in an execution at:</p><h2 id=plugins-and-their-descriptions>Plugins and their descriptions</h2><p>This is new feature of Risu that will show you available scripts and their description.</p><pre tabindex=0><code>./Risu.py --list-plugins --description
+{&#39;backend&#39;: &#39;core&#39;, &#39;description&#39;: &#39;This plugin checks if Apache reaches its MaxRequestWorkers&#39;, &#39;plugin&#39;: &#39;/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/httpd/1406417.sh&#39;}
+{&#39;backend&#39;: &#39;core&#39;, &#39;description&#39;: &#39;Checks missconfigured host in nova vs hostname&#39;, &#39;plugin&#39;: &#39;/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/ceilometer/1483456.sh&#39;}
+{&#39;backend&#39;: &#39;core&#39;, &#39;description&#39;: &#39;Checks for outdated ceph packages&#39;, &#39;plugin&#39;: &#39;/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/ceph/1358697.sh&#39;}
+{&#39;backend&#39;: &#39;core&#39;, &#39;description&#39;: &#39;Checks httpd WSGIApplication defined to avoid wrong redirection&#39;, &#39;plugin&#39;: &#39;/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/httpd/1478042.sh&#39;}
+{&#39;backend&#39;: &#39;core&#39;, &#39;description&#39;: &#39;Checks for keystone transaction errors on cleanup&#39;, &#39;plugin&#39;: &#39;/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/keystone/1473713.sh&#39;}
+{&#39;backend&#39;: &#39;core&#39;, &#39;description&#39;: &#39;Checks for keystone LDAP domain template problem&#39;, &#39;plugin&#39;: &#39;/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/keystone/templates/1519057.sh&#39;}
+{&#39;backend&#39;: &#39;core&#39;, &#39;description&#39;: &#39;Checks for wrong auth_url configuration in metadata_agent.ini&#39;, &#39;plugin&#39;: &#39;/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron/1340001.sh&#39;}
+{&#39;backend&#39;: &#39;core&#39;, &#39;description&#39;: &#39;Checks python-ryu tracebacks&#39;, &#39;plugin&#39;: &#39;/home/iranzo/DEVEL/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron/1450223.sh&#39;}
+</code></pre><h2 id=doing-a-live-check-example>Doing a live check example</h2><p>This is an example of execution of Risu using all openstack and pacemaker tests collections.</p><pre tabindex=0><code>./Risu.py -q -l -i pacemaker -i openstack
+INFO:Risu:using default plugin path
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/ceilometer_bug_1483456.sh: failed
+    https://bugzilla.redhat.com/show_bug.cgi?id=1483456
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/ceph_bug_1358697.sh: failed
+    outdated ceph packages: https://bugzilla.redhat.com/show_bug.cgi?id=1358697
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/httpd_bug_1478042.sh: skipped
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/keystone_bug_1473713.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron_bug_1450223.sh: skipped
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron_bug_1474092.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron_bug_1489066.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/nova_bug_1474092.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/swift_bug_1500607.sh: failed
+    swift expirer https://bugzilla.redhat.com/show_bug.cgi?id=1500607
+# /root/Risu/Risuclient/plugins/core/launchpad/openstack/keystone_bug_1649616.sh: okay
+# /root/Risu/Risuclient/plugins/core/openstack/ceilometer/expiration.sh: failed
+    ceilometer.conf setting must be updated:
+    alarm_history_time_to_live = -1
+    ceilometer.conf setting must be updated:
+    event_time_to_live = -1
+    ceilometer.conf setting must be updated:
+    metering_time_to_live = -1
+</code></pre><h2 id=doing-a-fs-snapshot-check-example>Doing a fs snapshot check example</h2><p>This is an example of execution of Risu using <code>pacemaker</code> and <code>openstack</code> filter against fs snapshot.</p><pre tabindex=0><code>./Risu.py -q -i pacemaker -i openstack sosreport-undercloud-0.redhat.local-20171117212710/
+INFO:Risu:using default plugin path
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/ceilometer_bug_1483456.sh: failed
+    https://bugzilla.redhat.com/show_bug.cgi?id=1483456
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/ceph_bug_1358697.sh: failed
+    outdated ceph packages: https://bugzilla.redhat.com/show_bug.cgi?id=1358697
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/httpd_bug_1478042.sh: skipped
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/keystone_bug_1473713.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron_bug_1450223.sh: skipped
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron_bug_1474092.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/neutron_bug_1489066.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/nova_bug_1474092.sh: okay
+# /root/Risu/Risuclient/plugins/core/bugzilla/openstack/swift_bug_1500607.sh: failed
+    swift expirer https://bugzilla.redhat.com/show_bug.cgi?id=1500607
+# /root/Risu/Risuclient/plugins/core/launchpad/openstack/keystone_bug_1649616.sh: okay
+# /root/Risu/Risuclient/plugins/core/openstack/ceilometer/expiration.sh: failed
+    ceilometer.conf setting must be updated:
+    alarm_history_time_to_live = -1
+    ceilometer.conf setting must be updated:
+    event_time_to_live = -1
+    ceilometer.conf setting must be updated:
+    metering_time_to_live = -1
+</code></pre><h2 id=html-interface>HTML Interface</h2><ul><li>Create by using <code>--output $FOLDER</code> and <code>--web</code>, open the generated <code>risu.html</code>.</li></ul><ul><li><p>Risu-web now supports the parsing of magui.json.</p></li><li><p>It&rsquo;s possible to tell the risu.html which json to parse by adding json= as a query string:</p></li></ul><pre tabindex=0><code>http://host/risu.html?json=magui.json
+</code></pre><h2 id=ansible-playbooks>Ansible playbooks</h2><p>Risu can also run Ansible playbooks via extension</p><p>The are some additional conventions that are detailed in <a href=doc/ansible-playbooks.md>ansible-playbooks.md</a> that determine how to code them to be executed in live or snapshoot mode.</p><p>Commands have been extended to allow <code>--list-plugins</code> to list them and include /exclude filters to work with them.</p><p>All of them must end in <code>.yml</code>.</p><pre tabindex=0><code>found #1 extensions / found #0 tests at default path
+mode: fs snapshot .
+# Running extension ansible-playbook
+# /home/iranzo/DEVEL/Risu/Risu/playbooks/system/clock-ntpstat.yml: skipped
+    Skipped for incompatible operating mode
+</code></pre><p>vs</p><pre tabindex=0><code>found #2 extensions with #2 plugins
+mode: live
+# /home/iranzo/DEVEL/Risu/Risuclient/plugins/ansible/openstack/rabbitmq/ha-policies.yml: okay
+# /home/iranzo/DEVEL/Risu/Risuclient/plugins/ansible/system/clock-ntpstat.yml: failed
+    {&#34;changed&#34;: false, &#34;cmd&#34;: &#34;ntpstat&#34;, &#34;msg&#34;: &#34;[Errno 2] No such file or directory&#34;,
+</code></pre></div></article></main><div class="authorbox clearfix"><figure class=authorbox__avatar><img alt="RISU team avatar" src=/images/risu.png class=avatar height=90 width=90></figure><div class=authorbox__header><span class=authorbox__name>About RISU team</span></div><div class=authorbox__description>Risu team works on getting an easy to extend framework for reporting issues at your systems</div></div><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/changelog/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Timeline</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/readme.magui/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>Magui</p></a></div></nav></div></div><footer class=footer><div class="container footer__container flex"><div class=footer__copyright>&copy; 2023 RISUorg team.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span></div></div></footer></div><script async defer src=/js/menu.js></script>
+<script src=/js/custom.js></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script></body></html>
