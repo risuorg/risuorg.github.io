@@ -2,7 +2,6 @@ baseURL= "https://risuorg.github.io"
 title = "RISU"
 theme = "mainroad"
 languageCode = "en-us"
-paginate = "10" # Number of posts per page
 disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
 googleAnalytics = "UA-81705-14" # Enable Google Analytics by entering your tracking id
 menu = "main"
@@ -11,6 +10,9 @@ menu = "main"
   name = "RISU team"
   bio = "Risu team works on getting an easy to extend framework for reporting issues at your systems"
   avatar = "images/risu.png"
+
+[pagination]
+pagerSize = 10
 
 
 [Params]
