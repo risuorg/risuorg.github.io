@@ -31,7 +31,6 @@ Some of the changes include...
   - is_filemode and is_required_filemode to check access permissions
 - POT generation update to allow duplicate message id's
 - Framework (Risu and magui)
-
   - Python optimizations
     - Removed duplicated code
     - Declare variables to remove to reduce memory footprint
