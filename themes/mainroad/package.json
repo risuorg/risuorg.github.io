@@ -5,7 +5,7 @@
   "license": "GPL-2.0",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
-    "editorconfig-checker": "^4.0.2",
+    "editorconfig-checker": "^6.1.1",
     "eslint": "^7.26.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
