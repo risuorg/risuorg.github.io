@@ -39,6 +39,7 @@ Check latest changes on <Changelog.md>
 
 - Just clone the git repository and execute it from there 'or'
 - use 'pipsi' or create a python virtual env to install package 'Risu'
+
   ```sh
   # pipsi install Risu
   Already using interpreter /usr/bin/python3
@@ -56,6 +57,7 @@ Check latest changes on <Changelog.md>
 
   - Pipsi will take care of installing a virtual environment and link to binary folder so you can call Risu.py or magui.py directly
   - Remember that pypi package might not contain all the latests plugins features as the github repo one.
+
 - Container:
   - Use our automatically built container in docker hub:
     - `docker run --user=$(id -u) --rm -v $PATHTOSOSREPORT:/data:Z Risu/Risu:latest /data --entrypoint="magui.py"`
